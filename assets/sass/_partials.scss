@@ -1,0 +1,38 @@
+//DECLARATIONS
+$blue: #598294;
+$brown: #49423d;
+$orange: #aa650d;
+$sand: #a9996e;
+$sand-white: #edeae5;
+$blue-trans: rgba(89,130,148,0.9);
+$brown-trans: rgba(73,66,61,0.9);
+$orange-trans: rgba(170,101,13,0.9);
+$sand-trans: rgba(169,153,110,0.9);
+
+//FONT DECLARATIONS
+@font-face {
+    font-family: 'dtl_nobelt_light';
+    src: url('..fonts/dtlnobelt-light-webfont.eot');
+    src: url('../fonts/dtlnobelt-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dtlnobelt-light-webfont.woff2') format('woff2'),
+         url('../fonts/dtlnobelt-light-webfont.woff') format('woff'),
+         url('../fonts/dtlnobelt-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dtl_nobelt_regular';
+    src: url('../fonts/dtlnobelt-webfont.eot');
+    src: url('../fonts/dtlnobelt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dtlnobelt-webfont.woff2') format('woff2'),
+         url('../fonts/dtlnobelt-webfont.woff') format('woff'),
+         url('../fonts/dtlnobelt-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+$nobel-stack: 'dlt_nobelt_regular', sans-serif;
+$nobel-light-stack: 'dtl_nobelt_light', sans-serif;
+
+.noscroll {
+	overflow: hidden;
+}
