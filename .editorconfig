@@ -1,0 +1,3 @@
+root = true
+[**/*.{html,php,js,css,scss}]
+indent_style: tab
