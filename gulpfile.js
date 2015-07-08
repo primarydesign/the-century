@@ -46,14 +46,18 @@ gulp.task('script', function(){
 		.pipe(browserSync.stream());
 });
 
-//watch and livereload file changes
-gulp.task('watch', function(){
-	gulp.watch('./assets/**/*.{scss,css}', ['style']);
-	gulp.watch('./assets/**/*.js', ['script']);
-	gulp.watch('./**/*.html').on('change', browserSync.reload);
+//watch and livereload changes
+gulp.task('develop', ['browse', 'watch']);
+
+//watch HTML/CSS/SCSS/JS files for changes
+gulp.task('watch', ['build'], function(){
+	gulp.watch('./assets/(css|scss)/**/*.{scss,css}', ['style']);
+	gulp.watch('./assets/js/**/*.js', ['script']);
+	gulp.watch('./assets/img/**/*.*', ['image'])
+	gulp.watch('./**/*.html', ['html']);
 });
 
-//minify HTML 
+//minify HTML
 gulp.task('html', function(){
 	return gulp.src('./*.html')
 		.pipe($.htmlmin())
@@ -62,3 +66,14 @@ gulp.task('html', function(){
 		.pipe($.htmlmin())
 		.pipe(gulp.dest(build + 'pages'));
 });
+
+//compress JPG/PNG/GIF/SVG images
+gulp.task('image', function(){
+	return gulp.src('./assets/img/**/*.{jpg,jpeg,png,gif,svg}')
+		.pipe($.imagemin({
+			progressive: true}))
+		.pipe(gulp.dest(build + 'assets/img'));
+})
+
+//reconstruct build environment
+gulp.task('build', ['style','script','html','image']);

@@ -20,7 +20,7 @@ header {
 	background: $brown;
 	z-index: 50;
 	text-align: center;
-	
+
 	h2 {
 		color: #fff;
 		font-weight: 300;
@@ -28,14 +28,14 @@ header {
 		line-height: 60px;
 		text-transform: uppercase;
 	}
-	
+
 	.menu-wrap {
-		
+
 		height: 100%;
 		position: absolute;
 		width: 100px;
 		top:0; right: 0;
-		
+
 		#menu-open {
 			align-content: center;
 			align-items: center;
@@ -43,7 +43,7 @@ header {
 			flex-flow: column;
 			height: 100%;
 			justify-content: center;
-			
+
 			div {
 				height: 2px;
 				width: 60px;
@@ -54,7 +54,7 @@ header {
 			}
 		}
 	}
-	
+
 }
 
 .side-wrap {
@@ -65,31 +65,31 @@ header {
 	top: 0; left: 0;
 	background: $sand;
 	z-index: 80;
-	
+
 	#banner {
 		box-sizing: border-box;
 		padding: 10px 10px 20px;
 		width: 100%;
 		background: $sand-white;
-		
+
 		img {
 			max-width: 100%;
 		}
 	}
-	
+
 	#sidenav {
 		padding: 45px 15px 50px;
 		color: #fff;
 		font-family: 'nobel-light-stack';
-		
+
 		li {
 			margin: 6px 0;
 			font-size: .95em;
 			text-transform: uppercase;
-			
+
 			ul {
 				display: none;
-				
+
 				li {
 					margin: 0 0 0 10px;
 					font-size: 1em;
@@ -101,7 +101,7 @@ header {
 				}
 			}
 		}
-		
+
 		.active {
 			color:$brown;
 			& + ul {
@@ -115,7 +115,7 @@ header {
 }
 
 #menu-overlay {
-	
+
 	align-items: center;
 	display: none;
 	height: 100%;
@@ -125,28 +125,28 @@ header {
 	top: 0;
 	width: 100%;
 	z-index: 85;
-	
+
 	background: $brown-trans;
-	
+
 	&.active {
 		display: flex;
 	}
-	
+
 	#menu {
 		max-width: 900px;
 		width: 80%;
-		
+
 		a {
 			color: #fff;
 			font-size: 1.5em;
 			font-weight: 200;
 			text-decoration: none;
 			text-transform: uppercase;
-			
+
 			&:hover {
 				color: $sand;
 			}
-			
+
 			@media (min-width: 450px){
 				font-size: 2em;
 			}
@@ -164,15 +164,15 @@ header {
 		}
 		li:nth-child(1n+2) {
 			margin-top: 20px;
-		}		
+		}
 	}
-	
+
 	#menu-close {
 		height: 100px;
 		position: absolute;
 		width: 100px;
 		top:0;right:0;
-		
+
 		&:before, &:after {
 			content: "";
 			display: inline-block;
@@ -201,7 +201,7 @@ header {
 		position: absolute;
 		width: 290px;
 		bottom: 0;right:0;left:0;
-		
+
 		a {
 			color: #fff;
 			font-family: $nobel-light-stack;
@@ -225,10 +225,10 @@ header {
 	justify-content: center;
 	display: none;
 	&.active {display: flex;}
-	
+
 	.inner-box {
 		position: relative;
-		
+
 		.close {
 			display: inline-block;
 			height: 40px;
@@ -240,13 +240,13 @@ header {
 			background: $orange;
 			color: #fff;
 		}
-		
+
 		.central-box {
 			box-sizing: border-box;
 			height: 100%;
 			overflow-y: scroll;
 		}
-		
+
 		@media (max-width:699px) {
 			height: 100%;
 			width: 100%;
@@ -266,7 +266,7 @@ header {
 	display: none;
 	display: none;
 	&.active {display: flex;}
-	
+
 	.inner-box {
 		padding-top: 40px;
 		height: 100vh;
@@ -305,7 +305,7 @@ header {
 }
 
 #privacy-disclosure, #terms-disclosure {
-	
+
 	article {
 		background: #eee;
 		padding: 0 20px 20px;
@@ -335,13 +335,13 @@ header {
 }
 
 #section1 {
-	
+
 	div[id^='slide'] {
 		align-content: center;
 		align-items: center;
 		display: flex;
 		justify-content: center;
-	}	
+	}
 }
 
 figcaption {
@@ -356,17 +356,17 @@ figcaption {
 	font-weight:200;
 	letter-spacing:1px;
 	padding:10px 0;
-	
+
 	@media (min-width: 768px) and (-webkit-device-pixel-ratio: 1){
 		line-height: 2.5em;
 	}
 }
 
 .fp-controlArrow {
-	
+
 	@media (orientation: portrait) {
 		display: none !important;
-		
+
 		@media (min-width:650px){
 			display: block;
 		}
@@ -374,7 +374,7 @@ figcaption {
 	@media (orientation: landscape){
 		transform: scale(0.5,0.5)
 			translateY(50%);
-			
+
 		@media(min-width:650px){
 			transform:  scale(1, 1)
 				translateY(50%)!important;
