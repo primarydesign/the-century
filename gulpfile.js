@@ -1,55 +1,64 @@
 var gulp = require('gulp'),
-	 concat = require('gulp-concat'),
-	 uglify = require('gulp-uglify'),
-	 minify = require('gulp-minify-css'),
-	 autoprefixer = require('gulp-autoprefixer'),
-	 sass = require('gulp-ruby-sass'),
-	 rename = require('gulp-rename'),
-	 browserSync = require('browser-sync');
+	$ = require('gulp-load-plugins')(),
+	browserSync = require('browser-sync').create(),
+	argv = require('yargs').argv;
 
-gulp.task('default',['style','script','browse'], function(){
-	gulp.watch('./assets/**/*.scss', ['style'])
-	gulp.watch('./assets/**/*.js', ['script'])
-	gulp.watch('./**/*.html')
-		.on('change', browserSync.reload);
-});
+var p = !!(argv.production), o = !!(argv.open),
+	build = './builds/' + (p ? 'production/' : 'development/');
 
-//compile and optimize
-gulp.task('style', ['sass'], function(){
-	return gulp.src('./assets/css/*.css')
-		.pipe(autoprefixer({
-			browsers: ['last 5 versions'],
-			cascade: false
-		}))
-		.pipe(minify())
-		.pipe(rename('index.min.css'))
+//compile SASS with Compass
+gulp.task('compass', function(){
+	return gulp.src('./assets/sass/**/*.scss')
+		.pipe($.compass({
+			css: './assets/css',
+			sass: './assets/sass',
+			style: (p ? 'compressed' : 'expanded')}))
+		.on('error', function(error){
+			console.log(error);})
 		.pipe(gulp.dest('./assets/css'))
 		.pipe(browserSync.stream());
 });
 
-//compile and optimize Javascript
-gulp.task('script', function(){
-	return gulp.src('./assets/js/*.js')
-		.pipe(uglify())
-		.pipe(gulp.dest('./assets/js/'))
-		.pipe(browserSync.stream());
-});
-
-/********** SUBSIDIARY TASKS **********/
-
-//compile SASS to CSS
-gulp.task('sass', function() {
-	return sass('./assets/sass/')
-		.on('error', function(err){
-			console.log('Error!', err.message);
-		})
-		.pipe(gulp.dest('./assets/css/'))
-		.pipe(browserSync.stream());
-});
-//initialize local server
-gulp.task('browse', function () {
+//initialize development server
+//use --open to open browser
+gulp.task('browse', function(){
 	browserSync.init({
-		server: { baseDir: "./"},
-		browser: 'Google Chrome'
+		server: build,
+		open: (o ? 'external' : false)
 	});
+});
+
+//process stylesheets
+gulp.task('style', ['compass'], function(){
+	return gulp.src('./assets/css/**/*.css')
+		.pipe($.autoprefixer({
+			browsers: ['last 5 versions']}))
+		.pipe($.minifyCss())
+		.pipe(gulp.dest(build + 'assets/css'))
+		.pipe(browserSync.stream());
+})
+
+//process Javascript files
+gulp.task('script', function(){
+	return gulp.src('./assets/js/**/*.js')
+		.pipe($.uglify())
+		.pipe(gulp.dest(build + 'assets/js'))
+		.pipe(browserSync.stream());
+});
+
+//watch and livereload file changes
+gulp.task('watch', function(){
+	gulp.watch('./assets/**/*.{scss,css}', ['style']);
+	gulp.watch('./assets/**/*.js', ['script']);
+	gulp.watch('./**/*.html').on('change', browserSync.reload);
+});
+
+//minify HTML 
+gulp.task('html', function(){
+	return gulp.src('./*.html')
+		.pipe($.htmlmin())
+		.pipe(gulp.dest(build));
+	return gulp.src('./pages')
+		.pipe($.htmlmin())
+		.pipe(gulp.dest(build + 'pages'));
 });
