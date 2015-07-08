@@ -30,7 +30,7 @@ gulp.task('browse', function(){
 
 //process stylesheets
 gulp.task('style', ['compass'], function(){
-	return gulp.src('./assets/css/**/*.css')
+	return gulp.src('./assets/css/**/*.{css,scss}')
 		.pipe($.autoprefixer({
 			browsers: ['last 5 versions']}))
 		.pipe($.minifyCss())
@@ -51,10 +51,16 @@ gulp.task('develop', ['browse', 'watch']);
 
 //watch HTML/CSS/SCSS/JS files for changes
 gulp.task('watch', ['build'], function(){
-	gulp.watch('./assets/(css|scss)/**/*.{scss,css}', ['style']);
-	gulp.watch('./assets/js/**/*.js', ['script']);
+	gulp.watch('./assets/css/**/*.css', ['style'])
+.on('change', browserSync.reload);
+	gulp.watch('./assets/sass/**/*.scss', ['style'])
+.on('change', browserSync.reload);
+	gulp.watch('./assets/js/**/*.js', ['script'])
+.on('change', browserSync.reload);
 	gulp.watch('./assets/img/**/*.*', ['image'])
-	gulp.watch('./**/*.html', ['html']);
+.on('change', browserSync.reload);
+	gulp.watch('./**/*.html', ['html'])
+.on('change', browserSync.reload);
 });
 
 //minify HTML

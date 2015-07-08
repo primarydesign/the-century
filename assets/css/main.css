@@ -226,6 +226,24 @@ html.fp-enabled,
   display: inline-block;
 }
 
+@font-face {
+  font-family: 'dtl_nobelt_light';
+  src: url("..fonts/dtlnobelt-light-webfont.eot");
+  src: url("../fonts/dtlnobelt-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/dtlnobelt-light-webfont.woff2") format("woff2"), url("../fonts/dtlnobelt-light-webfont.woff") format("woff"), url("../fonts/dtlnobelt-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'dtl_nobelt_regular';
+  src: url("../fonts/dtlnobelt-webfont.eot");
+  src: url("../fonts/dtlnobelt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/dtlnobelt-webfont.woff2") format("woff2"), url("../fonts/dtlnobelt-webfont.woff") format("woff"), url("../fonts/dtlnobelt-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.noscroll {
+  overflow: hidden;
+}
+
 /* CSS Document */
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -644,24 +662,6 @@ footer {
     display: none;
   }
 }
-@font-face {
-  font-family: 'dtl_nobelt_light';
-  src: url("..fonts/dtlnobelt-light-webfont.eot");
-  src: url("../fonts/dtlnobelt-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/dtlnobelt-light-webfont.woff2") format("woff2"), url("../fonts/dtlnobelt-light-webfont.woff") format("woff"), url("../fonts/dtlnobelt-light-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'dtl_nobelt_regular';
-  src: url("../fonts/dtlnobelt-webfont.eot");
-  src: url("../fonts/dtlnobelt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/dtlnobelt-webfont.woff2") format("woff2"), url("../fonts/dtlnobelt-webfont.woff") format("woff"), url("../fonts/dtlnobelt-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-.noscroll {
-  overflow: hidden;
-}
-
 .contact {
   margin: auto;
 }
@@ -985,6 +985,75 @@ input.submit.disabled {
     font-size: 1em;
   }
 }
+#fullpage .section, #fullpage .slide {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#fullpage #section1 #slide1 {
+  background: url("../img/section1+slide1_living-room-with-a-view-of-los-angeles.jpg");
+}
+#fullpage #section1 #slide2 {
+  background: url("../img/section11+slide2_lobby-with-doorman-and-concierge.jpg");
+}
+#fullpage #section1 #slide3 {
+  background: url("../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg");
+}
+#fullpage #section2 {
+  background: url("../img/section2+section20_terrace-breathtaking-views-of-la.jpg");
+}
+#fullpage #section3 {
+  background: url("../img/section3_expansive-great-room-dramatic-views-terrace-and-two-fireplaces.jpg");
+}
+#fullpage #section4 {
+  background: url("../img/section4_chefs-kitchen-with-terrace-and-exceptional-appliances.jpg");
+}
+#fullpage #section5 {
+  background: url("../img/section5_stunning-formal-dining-room.jpg");
+}
+#fullpage #section6 {
+  background: url("../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg");
+}
+#fullpage #section7 {
+  background: url("../img/section7_full-bathrooms-his-her-master-baths.jpg");
+}
+#fullpage #section8 {
+  background: url("../img/section18_getty-museum-featuring-art-photography-architecture-and-gardens.jpg");
+}
+#fullpage #section9 {
+  background: url("../img/section10_exterior-with-acres-of-lush-gardens.jpg");
+}
+#fullpage #section10 {
+  background: url("../img/section11+slide2_lobby-with-doorman-and-concierge.jpg");
+}
+#fullpage #section12 {
+  background: url("../img/section12_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg");
+}
+#fullpage #section13 {
+  background: url("../img/section13_fitness-center-with-yoga-pilates-studio.jpg");
+}
+#fullpage #section14 {
+  background: url("../img/section14_plush-multimedia-screening-room-lounge.jpg");
+}
+#fullpage #section15 {
+  background: url("../img/section15_on-site-restaurant-hinoki-and-the-bird-from-chef-david-meyers.jpg");
+}
+#fullpage #section16 {
+  background: url("../img/section16_outdoor-lounge-and-firepit.jpg");
+}
+#fullpage #section17 {
+  background: url("../img/section17_botique-shopping-destination-rodeo-drive.jpg");
+}
+#fullpage #section181 {
+  background: url("../img/section18_getty-museum-featuring-art-photography-architecture-and-gardens.jpg");
+}
+#fullpage #section19 {
+  background: url("../img/section19_nearby-golf-courses-and-country-clubs.jpg");
+}
+#fullpage #section20 {
+  background: url("../img/section2+section20_terrace-breathtaking-views-of-la.jpg");
+}
+
 * {
   margin: 0;
   padding: 0;
