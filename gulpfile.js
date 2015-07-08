@@ -23,7 +23,8 @@ gulp.task('compass', function(){
 gulp.task('browse', function(){
 	browserSync.init({
 		server: build,
-		open: (o ? 'external' : false)
+		open: (o ? 'external' : false),
+		notify: false
 	});
 });
 
@@ -49,7 +50,7 @@ gulp.task('script', function(){
 gulp.task('develop', ['browse', 'watch']);
 
 //watch HTML/CSS/SCSS/JS files for changes
-gulp.task('watch', ['build'], function(){
+gulp.task('watch', function(){
 	gulp.watch('./assets/css/**/*.css', ['style']);
 	gulp.watch('./assets/sass/**/*.scss', ['style']);
 	gulp.watch('./assets/js/**/*.js', ['script']);
@@ -60,10 +61,7 @@ gulp.task('watch', ['build'], function(){
 gulp.task('html', function(){
 	return gulp.src('./*.html')
 		.pipe($.htmlmin())
-		.pipe(gulp.dest(build));
-	return gulp.src('./pages')
-		.pipe($.htmlmin())
-		.pipe(gulp.dest(build + 'pages'))
+		.pipe(gulp.dest(build))
 		.pipe(browserSync.stream());
 });
 

@@ -240,6 +240,18 @@ html.fp-enabled,
   font-weight: normal;
   font-style: normal;
 }
+div, span, p, a, li, h1, h2, h3 {
+  font-family: "dtl_nobelt_light", sans-serif;
+}
+
+button, input[type="submit"], a {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: 2px;
+}
+
 /* CSS Document */
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -1060,6 +1072,10 @@ input.submit.disabled {
   text-align: center;
   padding: 0;
 }
+.dynamic-header * {
+  margin: 0;
+  padding: 0;
+}
 .dynamic-header h2 {
   line-height: 70px !important;
   padding: 0 !important;
@@ -1068,6 +1084,26 @@ input.submit.disabled {
   font-size: 1.7em !important;
   font-weight: 100;
   letter-spacing: 4px;
+}
+.dynamic-header .btn-wrapper {
+  height: 70px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.dynamic-header .btn-wrapper button {
+  height: 30px;
+  width: 100px;
+  box-sizing: border-box;
+  font-size: .6em;
+  font-weight: bold;
+  background: #fff;
+  color: #B39153;
 }
 
 /*(namespace)*/

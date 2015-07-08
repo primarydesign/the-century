@@ -1,4 +1,7 @@
 .dynamic-header { //namespace
+
+	* {margin:0;padding:0;}
+
 	height: 70px;
 	position: fixed;
 	top: 0;
@@ -17,4 +20,24 @@
 		font-weight: 100;
 		letter-spacing: 4px;
 	}
+
+	.btn-wrapper {
+		height: 70px;width:200px;
+		position: absolute;
+		top:0;right:0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-flow: column;
+
+		button {
+			height:30px;width:100px;
+			box-sizing: border-box;
+			font-size: .6em;
+			font-weight: bold;
+			background: #fff;
+			color: $bronze;
+		}
+	}
+
 }/*(namespace)*/

@@ -1,0 +1,9 @@
+div, span, p, a, li, h1, h2, h3 {
+	font-family: $nobel-light;
+}
+button, input[type="submit"], a {
+	cursor: pointer;
+}
+h1, h2, h3, h4 {
+	letter-spacing: 2px;
+}
