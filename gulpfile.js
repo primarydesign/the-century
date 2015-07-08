@@ -16,7 +16,6 @@ gulp.task('compass', function(){
 		.on('error', function(error){
 			console.log(error);})
 		.pipe(gulp.dest('./assets/css'))
-		.pipe(browserSync.stream());
 });
 
 //initialize development server
@@ -51,16 +50,10 @@ gulp.task('develop', ['browse', 'watch']);
 
 //watch HTML/CSS/SCSS/JS files for changes
 gulp.task('watch', ['build'], function(){
-	gulp.watch('./assets/css/**/*.css', ['style'])
-.on('change', browserSync.reload);
-	gulp.watch('./assets/sass/**/*.scss', ['style'])
-.on('change', browserSync.reload);
-	gulp.watch('./assets/js/**/*.js', ['script'])
-.on('change', browserSync.reload);
-	gulp.watch('./assets/img/**/*.*', ['image'])
-.on('change', browserSync.reload);
-	gulp.watch('./**/*.html', ['html'])
-.on('change', browserSync.reload);
+	gulp.watch('./assets/css/**/*.css', ['style']);
+	gulp.watch('./assets/sass/**/*.scss', ['style']);
+	gulp.watch('./assets/js/**/*.js', ['script']);
+	gulp.watch('./**/*.html', ['html']);
 });
 
 //minify HTML
@@ -70,7 +63,8 @@ gulp.task('html', function(){
 		.pipe(gulp.dest(build));
 	return gulp.src('./pages')
 		.pipe($.htmlmin())
-		.pipe(gulp.dest(build + 'pages'));
+		.pipe(gulp.dest(build + 'pages'))
+		.pipe(browserSync.stream());
 });
 
 //compress JPG/PNG/GIF/SVG images
@@ -78,7 +72,8 @@ gulp.task('image', function(){
 	return gulp.src('./assets/img/**/*.{jpg,jpeg,png,gif,svg}')
 		.pipe($.imagemin({
 			progressive: true}))
-		.pipe(gulp.dest(build + 'assets/img'));
+		.pipe(gulp.dest(build + 'assets/img'))
+		.pipe(browserSync.stream());
 })
 
 //reconstruct build environment
