@@ -1,0 +1,43 @@
+#sidebar-wrap { //namespace
+
+	position: fixed;
+	top:0;left:25px;
+	width: 180px;
+
+	.banner {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 15px 10px;
+		background: #fff;
+	}
+
+	.sidenav {
+		box-sizing: border-box;
+		padding: 30px 10px;
+		background: $bronze;
+
+		.l1, .l2 {
+			list-style: none;
+			font-size: .8em;
+			li:hover {color: $brown;}
+		}
+		.l1 > li > a {
+			font-family: $nobel-light;
+			letter-spacing: 1px;
+			line-height: 1.7em;
+			color: #fff;
+		}
+		.l2 {
+			margin-bottom: 10px;
+			li {
+				font-family: $nobel;
+				font-weight: 600;
+				letter-spacing: .5px;
+				line-height: 1.6em;
+				color: $sand;
+			}
+		}
+
+	}
+
+}//namespace

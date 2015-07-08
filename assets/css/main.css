@@ -252,6 +252,14 @@ h1, h2, h3, h4 {
   letter-spacing: 2px;
 }
 
+#dynamic-header {
+  z-index: 50;
+}
+
+#sidebar-wrap {
+  z-index: 60;
+}
+
 /* CSS Document */
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -1062,7 +1070,7 @@ input.submit.disabled {
   background: url("../img/section2+section20_terrace-breathtaking-views-of-la.jpg");
 }
 
-.dynamic-header {
+#dynamic-header {
   height: 70px;
   position: fixed;
   top: 0;
@@ -1072,11 +1080,11 @@ input.submit.disabled {
   text-align: center;
   padding: 0;
 }
-.dynamic-header * {
+#dynamic-header * {
   margin: 0;
   padding: 0;
 }
-.dynamic-header h2 {
+#dynamic-header h2 {
   line-height: 70px !important;
   padding: 0 !important;
   text-align: center;
@@ -1085,7 +1093,7 @@ input.submit.disabled {
   font-weight: 100;
   letter-spacing: 4px;
 }
-.dynamic-header .btn-wrapper {
+#dynamic-header .btn-wrapper {
   height: 70px;
   width: 200px;
   position: absolute;
@@ -1096,7 +1104,7 @@ input.submit.disabled {
   justify-content: center;
   flex-flow: column;
 }
-.dynamic-header .btn-wrapper button {
+#dynamic-header .btn-wrapper button {
   height: 30px;
   width: 100px;
   box-sizing: border-box;
@@ -1106,7 +1114,47 @@ input.submit.disabled {
   color: #B39153;
 }
 
-/*(namespace)*/
+#sidebar-wrap {
+  position: fixed;
+  top: 0;
+  left: 25px;
+  width: 180px;
+}
+#sidebar-wrap .banner {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  background: #fff;
+}
+#sidebar-wrap .sidenav {
+  box-sizing: border-box;
+  padding: 30px 10px;
+  background: #B39153;
+}
+#sidebar-wrap .sidenav .l1, #sidebar-wrap .sidenav .l2 {
+  list-style: none;
+  font-size: .8em;
+}
+#sidebar-wrap .sidenav .l1 li:hover, #sidebar-wrap .sidenav .l2 li:hover {
+  color: #5A5854;
+}
+#sidebar-wrap .sidenav .l1 > li > a {
+  font-family: "dtl_nobelt_light", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.7em;
+  color: #fff;
+}
+#sidebar-wrap .sidenav .l2 {
+  margin-bottom: 10px;
+}
+#sidebar-wrap .sidenav .l2 li {
+  font-family: "dlt_nobelt_regular", sans-serif;
+  font-weight: 600;
+  letter-spacing: .5px;
+  line-height: 1.6em;
+  color: #E6D3BC;
+}
+
 * {
   margin: 0;
   padding: 0;
