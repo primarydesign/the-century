@@ -12,6 +12,7 @@
 #dynamic-header {z-index: 50;}
 #sidebar-wrap {z-index: 60;}
 
+/* section & slides */
 .section, .slide {
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -19,23 +20,8 @@
 	margin: 0;padding:0;
 	padding-top: 90px; //header
 }
-.section {
-	figcaption, footer {
-		bottom: 20% !important;
-		padding: 20px 10% !important;
-		position: absolute;
-		width: 100%;
-		z-index: 10;
-		background:rgba(0,0,0,0.5);
-		span, h1, p, {
-			color: #fff;
-			font-family: $nobel;
-			font-size: 1.3em;
-			letter-spacing: 1px;
-			text-align: center;
-		}
-	}
-}
+
+/* figure captions */
 .section.slides {
 	figcaption {
 		padding: 30px 10px;
@@ -51,6 +37,7 @@
 	}
 }
 
+/* slider navigation */
 .fp-slidesNav {
 	position: absolute !important;
 	left: 50% !important;

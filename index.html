@@ -134,7 +134,7 @@
 			<figcaption class="verbose"><p>The Hillcrest Country Club is just one of the many exclusive destinations for golf nearby The Century. Other golf courses in the vicinty include the Bel Air and Los Angeles Country Clubs.</p></figcaption>
 			<footer>
 				<div class="cta-button"><button>SEE CENTURY</button></div>
-				<div class="sales-agent">Exclusive Sales Agent: Related Sales LLC / 310-552-2055 / thecentury.com</div>
+				<div class="sales-agent"><span>Exclusive Sales Agent: Related Sales LLC / 310-552-2055 / thecentury.com</span></div>
 			</footer>
 		</section>
 		<!--contact-form-->
@@ -221,9 +221,12 @@ common facilities. Please review the association budget and Final Subdivision Pu
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
+				fitToSection: true,
+				fixedElements: '#dynamic-header',
 				loopHorizontal: true,
 				scrollOverflow: true,
-				slidesNavigation: true
+				slidesNavigation: true,
+				verticalCentered: false,
 			});
 		});
 	</script>

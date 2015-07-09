@@ -8,3 +8,22 @@ button, input[type="submit"], a {
 h1, h2, h3, h4 {
 	letter-spacing: 2px;
 }
+.section {
+	padding: 0 !important;
+
+	figcaption, footer {
+		bottom: 15% !important;
+		padding: 30px 10% !important;
+		position: absolute;
+		width: 100%;
+		z-index: 10;
+		background:rgba(0,0,0,0.5);
+		span, h1, p, {
+			color: #fff;
+			font-family: $nobel;
+			font-size: 1.3em;
+			letter-spacing: 1px;
+			text-align: center;
+		}
+	}
+}
