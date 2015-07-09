@@ -16,28 +16,24 @@
 		padding: 30px 10px;
 		background: $bronze;
 
-		.l1, .l2 {
-			list-style: none;
-			font-size: .8em;
-			li:hover {color: $brown;}
-		}
-		.l1 > li > a {
-			font-family: $nobel-light;
-			letter-spacing: 1px;
-			line-height: 1.7em;
+		li {list-style: none;}
+		.main-items {
 			color: #fff;
+			font-size: .8em;
+			letter-spacing: 2px;
+			li {line-height: 1.8em;}
+			a {font-family: $nobel-light;}
 		}
-		.l2 {
-			margin-bottom: 10px;
-			li {
-				font-family: $nobel;
-				font-weight: 600;
-				letter-spacing: .5px;
-				line-height: 1.6em;
-				color: $sand;
-			}
+		.sub-items {
+			color: $sand;
+			font-size: .8em;
+			letter-spacing: .5px;
+			margin-bottom: 15px;
+			li {line-height: 1.6em;}
+			a {font-family: $nobel;}
 		}
-
+		li:hover {color:$brown;}
+		li.active {color: $brown;}
 	}
 
 }//namespace
