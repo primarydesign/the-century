@@ -31,8 +31,7 @@ gulp.task('browse', function(){
 //process stylesheets
 gulp.task('style', ['compass'], function(){
 	return gulp.src('./assets/css/**/*.{css,scss}')
-		.pipe($.autoprefixer({
-			browsers: ['last 5 versions']}))
+		.pipe($.autoprefixer())
 		.pipe($.minifyCss())
 		.pipe(gulp.dest(build + 'assets/css'))
 		.pipe(browserSync.stream());

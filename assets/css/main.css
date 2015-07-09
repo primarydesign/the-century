@@ -601,21 +601,12 @@ footer {
     display: none;
   }
 }
-.contact {
-  margin: auto;
-}
-
-.contact h2 {
-  text-align: center;
-}
-
 .cbp-mc-form {
   position: relative;
 }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.cbp-mc-form:before,
-.cbp-mc-form:after {
+.cbp-mc-form:before, .cbp-mc-form:after {
   content: " ";
   display: table;
 }
@@ -640,9 +631,7 @@ footer {
   color: #fff;
 }
 
-.cbp-mc-form input,
-.cbp-mc-form textarea,
-.cbp-mc-form select {
+.cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select {
   font-family: 'dtl_nobelt_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   line-height: 1.5;
   font-size: 1.4em;
@@ -663,10 +652,7 @@ footer {
   min-height: 200px;
 }
 
-.cbp-mc-form input:focus,
-.cbp-mc-form textarea:focus,
-.cbp-mc-form label:active + input,
-.cbp-mc-form label:active + textarea {
+.cbp-mc-form input:focus, .cbp-mc-form textarea:focus, .cbp-mc-form label:active + input, .cbp-mc-form label:active + textarea {
   outline: none;
   border: 3px rgba(0, 0, 0, 0.35);
 }
@@ -741,9 +727,7 @@ footer {
     padding: 10px;
   }
 
-  .cbp-mc-form input,
-  .cbp-mc-form textarea,
-  .cbp-mc-form select {
+  .cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select {
     width: 95%;
   }
 
@@ -769,161 +753,29 @@ footer {
   clear: both;
 }
 
-/* replace in main.css */
-.circle button {
-  font-family: 'dtl_nobelt_bold', Helvetica, Arial, sans-serif !important;
-  font-size: 0.8em;
-  line-height: 25%;
-  letter-spacing: 1px;
-  margin-top: 50px;
-  height: 10%;
-  background: #AA650D;
+form#contact {
+  margin: auto;
+  max-width: 700px;
+}
+form#contact * {
+  color: #433F39;
+  margin: 0;
+}
+form#contact fieldset {
   border: none;
-  color: #FFF;
-  width: auto;
-  font-weight: normal;
-  padding: 0 15px;
-}
-
-#slide1 .circle h2 {
-  font-size: 500%;
-  line-height: 0;
-  position: relative;
-  top: 10%;
-}
-
-.circle h3:nth-child(1) {
-  top: 15%;
-}
-
-.circle h3 {
-  font-size: 150%;
-  line-height: 0;
-  position: relative;
-}
-
-.terms-wrapper .terms-box #terms p, .terms-wrapper h2 {
-  color: #000;
-}
-
-#section6 {
-  background-position: left !important;
-}
-
-#section1, #section7, #section9, #section12, #section14 {
-  background-position: right !important;
-}
-
-#menu-overlay #menu li a {
-  font-family: 'dtl_nobelt_light', Helvetica, Arial, sans-serif !important;
-  line-height: 1.5em;
-  letter-spacing: 1px;
-}
-
-figcaption {
-  background: rgba(73, 66, 60, 0.8) none repeat scroll 0% 0%;
-}
-
-.cbp-mc-submit-wrap, .contact h2 {
-  text-align: center;
-  padding-left: 10px;
-  line-height: 1.3em;
-}
-
-#section6 {
-  background: url(../images/woman-tanning-by-the-swimming-pool_Seychelle_Santa-Monica-California.jpg);
-}
-
-select, option {
-  text-transform: initial;
-}
-
-.cbp-mc-column {
-  padding-bottom: 0;
+  margin: 0;
   padding-top: 0;
 }
-
-.field {
-  margin: 10px 0 15px;
-}
-
-.empty.touched, .invalid.touched {
-  margin-bottom: 0;
-}
-
-.err-invalid, .err-empty {
-  display: none;
-  /* default */
+form#contact .label {
+  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
   font-size: .6em;
-  line-height: 15px;
-  color: red;
+}
+form#contact .field {
+  margin: 5px 0 5px;
+  background: rgba(0, 0, 0, 0.35) !important;
 }
 
-.empty.touched ~ .err-empty {
-  display: block;
-}
-
-.invalid.touched ~ .err-invalid {
-  display: block;
-}
-
-input.submit {
-  margin-top: 0;
-}
-
-input.submit.disabled {
-  background: #666 !important;
-}
-
-.side-wrap #sidenav {
-  padding: 15px;
-}
-
-.side-wrap #sidenav li {
-  margin: 15px 0px;
-}
-
-#slide1 .circle, #slide2 .circle, #slide3 .circle {
-  background-repeat: no-repeat;
-}
-
-@media (orientation: landscape) and (max-width: 1280px) {
-  #menu-overlay #menu a {
-    color: #fff;
-    font-size: 1em;
-    font-weight: 200;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-}
-@media (max-width: 768px) {
-  .cbp-mc-form label {
-    padding: 0px 5px 0px 0px !important;
-  }
-
-  .cbp-mc-form input, .cbp-mc-form textarea, .cbp-mc-form select {
-    font-size: 1em !important;
-  }
-
-  .contact h2 {
-    padding-top: 100px !important;
-    text-align: left !important;
-  }
-
-  .cbp-mc-form input.cbp-mc-submit {
-    margin: -20px 0 !important;
-  }
-
-  #menu-overlay #menu-close::before, #menu-overlay #menu-close::after {
-    width: 38px;
-    top: -38px;
-  }
-}
-@media (max-width: 320px) {
-  #menu-overlay #menu a {
-    font-size: 1em;
-  }
-}
 #fullpage {
   /* BACKGROUNDS (SKIP SECTIONS 8-9) */
 }
@@ -1029,6 +881,17 @@ input.submit.disabled {
   font-size: .9em;
   font-weight: bold;
   line-height: 70px;
+}
+#fullpage #section20 {
+  padding-top: 90px !important;
+}
+#fullpage #section20 h2, #fullpage #section20 form, #fullpage #section20 footer {
+  position: static;
+}
+#fullpage #section20 h2 {
+  margin: 0;
+  padding: 30px 0 10px !important;
+  text-align: center !important;
 }
 
 #dynamic-header {
