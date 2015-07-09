@@ -954,10 +954,6 @@ input.submit.disabled {
 #fullpage {
   /* BACKGROUNDS */
 }
-#fullpage #section8 .fp-tableCell {
-  position: relative;
-  border-top: 30px solid #B39153;
-}
 #fullpage #section8 .info-wrapper {
   padding: 20px 0 0 250px;
   position: absolute;
