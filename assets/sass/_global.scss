@@ -18,6 +18,8 @@ h1, h2, h3, h4 {
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
+		margin: 0;padding:0;
+		padding-top: 90px; //header
 	}
 	.section {
 		figcaption, .full-wrapper {
@@ -36,7 +38,18 @@ h1, h2, h3, h4 {
 			}
 		}
 	}
-	.full-wrapper {
-
+	.slides {
+		figcaption {
+			font-size: 2em;
+			font-weight: 200;
+			p {font-family: $nobel-light;}
+		}
+	}
+	.penthouse, .features, .neighborhood {
+		figcaption {
+			padding: 25px 10px;
+			font-size: 1.1em;
+			p {font-family:$nobel;}
+		}
 	}
 }

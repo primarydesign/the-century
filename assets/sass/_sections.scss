@@ -1,18 +1,45 @@
 #fullpage {
 
-	/* FIGURECAPTIONS */
-	.slides {
-		figcaption {
-			font-size: 2em;
-			font-weight: 200;
-			p {font-family: $nobel-light;}
+	#section8 {
+		.fp-tableCell {position:relative;border-top:30px solid $bronze;}
+		.info-wrapper {
+			padding: 20px 0 0 250px;
+			position: absolute;
+			top: 0;left:0;
+			color: $blackish;
 		}
-	}
-	.penthouse, .features, .neighborhood {
-		figcaption {
-			padding: 25px 10px;
+		h1,h2,h3,span,li{color: $blackish;margin:0;padding:0;}
+		h1 {
+			font-size: 2em;
+			font-weight: 100;
+			text-transform: uppercase;
+			margin-bottom: 13px;
+		}
+		.pdf li {
+			font-family: $nobel-light;
+			font-size: .7em;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			display: inline-block;
+			margin-bottom: 30px;
+		}
+		h2,h3,li {line-height: 2.1em;}
+		h2 {
 			font-size: 1.1em;
-			p {font-family:$nobel;}
+			font-weight: 100;
+			letter-spacing: 4px;
+			line-height: 1.8em;
+		}
+		h3 {
+			font-size: .8em;
+			font-weight: 600;
+			letter-spacing: .5px;
+			//line-height: 3em;
+			text-transform: initial;
+		}
+		li {
+			font-size: .8em;
+			list-style: none;
 		}
 	}
 	#section19 {
@@ -60,9 +87,9 @@
 	#section5 {background: url('../img/section5_stunning-formal-dining-room.jpg');}
 	#section6 {background: url('../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg');}
 	#section7 {background: url('../img/section7_full-bathrooms-his-her-master-baths.jpg');}
-	//#section8 {background:;}
-	//#section9 {background:;}
-	//#section10 {background:;}
+	// #section8 {background:;}
+	// #section9 {background:;}
+	// #section10 {background:;}
 	#section11 {background: url('../img/section11+slide2_lobby-with-doorman-and-concierge.jpg');}
 	#section12 {background: url('../img/section12_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg');}
 	#section13 {background: url('../img/section13_fitness-center-with-yoga-pilates-studio.jpg');}

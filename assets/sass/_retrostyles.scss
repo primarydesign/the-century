@@ -108,24 +108,24 @@ sup {
 
 /* Floor Plan Section */
 
-.floorplan-info {
-	text-transform:uppercase;
-	text-align:left;
-	padding:30px;
-	float:left;
-}
-
-.floorplan-info h2 {
-	padding-top:0px;
-}
-
-.floorplan-info h2, .floorplan-info h3, .floorplan-info p, .floorplan-info, .floorplan-info li a {
-	color:#49423D;
-}
-
-.floorplan-info li a {
-	text-decoration:none;
-}
+// .floorplan-info {
+// 	text-transform:uppercase;
+// 	text-align:left;
+// 	padding:30px;
+// 	float:left;
+// }
+//
+// .floorplan-info h2 {
+// 	padding-top:0px;
+// }
+//
+// .floorplan-info h2, .floorplan-info h3, .floorplan-info p, .floorplan-info, .floorplan-info li a {
+// 	color:#49423D;
+// }
+//
+// .floorplan-info li a {
+// 	text-decoration:none;
+// }
 
 .plan-details, .plan-features, .btn-print, .btn-zoom {
 	font-size:.8em;
@@ -188,14 +188,14 @@ button {
 	border-radius: 2px;
 }
 
-.floorplan {
-	background-image:url(../images/seychelle-floorplan-penthouse-901.gif);
-	background-size:contain;
-	background-repeat:no-repeat;
-	background-position:top;
-	height: 400px;
-	margin-top: 150px;
-}
+// .floorplan {
+// 	background-image:url(../images/seychelle-floorplan-penthouse-901.gif);
+// 	background-size:contain;
+// 	background-repeat:no-repeat;
+// 	background-position:top;
+// 	height: 400px;
+// 	margin-top: 150px;
+// }
 
 /* Property Features */
 
@@ -234,9 +234,9 @@ button {
 //
 // }
 
-.floorplan {
-margin-top:75px;
-}
+// .floorplan {
+// margin-top:75px;
+// }
 
 }
 
@@ -334,26 +334,26 @@ line-height:20px !important;
 	padding-right: 100px;
  }
 
-.floorplan-info {
-padding: 0 50px 150px 250px;
- }
+// .floorplan-info {
+// padding: 0 50px 150px 250px;
+//  }
 
 // figcaption h3 {
 // 	display:none;
 // }
 
 .property-features, .highlights {
-	paddig-bottom:0;
+	padding-bottom:0;
 }
 
-.floorplan {
-	background-position:center;
-	height: 650px;
-}
+// .floorplan {
+// 	background-position:center;
+// 	height: 650px;
+// }
 
-.floorplan-info h2 {
-    padding-top: 100px;
-}
+// .floorplan-info h2 {
+//     padding-top: 100px;
+// }
 
  .highlights li {
 	 font-size:1.2em;
@@ -371,17 +371,17 @@ padding-left: 30px !important;
 
 @media (min-width:1000px) {
 
-.floorplan {
-	float: right;
-	width: 50%;
-}
-
-.floorplan-info {
-	float:left;
-	width:50%;
-	padding-top:50px;
-	padding-right: 0px;
-}
+// .floorplan {
+// 	float: right;
+// 	width: 50%;
+// }
+//
+// .floorplan-info {
+// 	float:left;
+// 	width:50%;
+// 	padding-top:50px;
+// 	padding-right: 0px;
+// }
 
 .highlights, .property-features {
 	padding-right: 250px;
