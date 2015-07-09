@@ -1,86 +1,6 @@
 #fullpage {
 
-	#section8 { //floorplan information
-		//.fp-tableCell {position:relative;border-top:30px solid $bronze;}
-		.info-wrapper {
-			padding: 20px 0 0 250px;
-			position: absolute;
-			top: 0;left:0;
-			color: $blackish;
-		}
-		h1,h2,h3,span,li{color: $blackish;margin:0;padding:0;}
-		h1 {
-			font-size: 2em;
-			font-weight: 100;
-			text-transform: uppercase;
-			margin-bottom: 13px;
-		}
-		.pdf li {
-			font-family: $nobel-light;
-			font-size: .7em;
-			letter-spacing: 1px;
-			list-style-image: url('../img/print');
-			text-transform: uppercase;
-			display: inline-block;
-			margin-bottom: 30px;
-		}
-		h2,h3,li {line-height: 2.1em;}
-		h2 {
-			font-size: 1.1em;
-			font-weight: 100;
-			letter-spacing: 4px;
-			line-height: 1.8em;
-		}
-		h3 {
-			font-size: .8em;
-			font-weight: 600;
-			letter-spacing: .5px;
-			//line-height: 3em;
-			text-transform: initial;
-		}
-		li {
-			font-size: .8em;
-			list-style: none;
-		}
-	}
-	#section9 { //floorplan image
-	}
-	#section19 {
-		figcaption {
-			bottom: 160px !important;
-		}
-		.full-wrapper {
-			height: 70px;
-			margin:0;padding:0;
-			text-align: center;
-			&.btn {
-				bottom: 70px !important;
-				background: $bronze;
-				line-height: 70px;
-				button {
-					background: #fff;
-					border-radius: 3px;
-					color: $bronze;
-					font-weight: bold;
-					text-transform: uppercase;
-					display: block;
-					margin: auto;
-					position: absolute;
-					top:50%;left:50%;
-					transform: translate(-50%,-50%);
-				}
-			}
-			&.info {
-				bottom: 0 !important;
-				background: $brown;
-				span {
-					line-height: 70px;
-				}
-			}
-		}
-	}
-
-	/* BACKGROUNDS */
+	/* BACKGROUNDS (SKIP SECTIONS 8-9) */
 	#slide1 {background: url('../img/section1+slide1_living-room-with-a-view-of-los-angeles.jpg');}
 	#slide2 {background: url('../img/section11+slide2_lobby-with-doorman-and-concierge.jpg');}
 	#slide3 {background: url('../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg');}
@@ -90,9 +10,7 @@
 	#section5 {background: url('../img/section5_stunning-formal-dining-room.jpg');}
 	#section6 {background: url('../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg');}
 	#section7 {background: url('../img/section7_full-bathrooms-his-her-master-baths.jpg');}
-	// #section8 {background:;}
-	// #section9 {background:;}
-	// #section10 {background:;}
+	#section10 {background: url('../img/section10_exterior-with-acres-of-lush-gardens.jpg');}
 	#section11 {background: url('../img/section11+slide2_lobby-with-doorman-and-concierge.jpg');}
 	#section12 {background: url('../img/section12_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg');}
 	#section13 {background: url('../img/section13_fitness-center-with-yoga-pilates-studio.jpg');}

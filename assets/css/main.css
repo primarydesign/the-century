@@ -265,7 +265,7 @@ h1, h2, h3, h4 {
   z-index: 60;
 }
 
-#fullpage .section, #fullpage .slide {
+.section, .slide {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -273,7 +273,8 @@ h1, h2, h3, h4 {
   padding: 0;
   padding-top: 90px;
 }
-#fullpage .section figcaption, #fullpage .section .full-wrapper {
+
+.section figcaption, .section footer {
   bottom: 20% !important;
   padding: 20px 10% !important;
   position: absolute;
@@ -281,25 +282,19 @@ h1, h2, h3, h4 {
   z-index: 10;
   background: rgba(0, 0, 0, 0.5);
 }
-#fullpage .section figcaption span, #fullpage .section figcaption h1, #fullpage .section figcaption p, #fullpage .section .full-wrapper span, #fullpage .section .full-wrapper h1, #fullpage .section .full-wrapper p {
+.section figcaption span, .section figcaption h1, .section figcaption p, .section footer span, .section footer h1, .section footer p {
   color: #fff;
   font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.3em;
   letter-spacing: 1px;
   text-align: center;
 }
-#fullpage .slides figcaption {
-  font-size: 2em;
-  font-weight: 200;
-}
-#fullpage .slides figcaption p {
-  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-#fullpage .penthouse figcaption, #fullpage .features figcaption, #fullpage .neighborhood figcaption {
+
+.penthouse figcaption, .features figcaption, .neighborhood figcaption {
   padding: 25px 10px;
   font-size: 1.1em;
 }
-#fullpage .penthouse figcaption p, #fullpage .features figcaption p, #fullpage .neighborhood figcaption p {
+.penthouse figcaption p, .features figcaption p, .neighborhood figcaption p {
   font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -952,87 +947,7 @@ input.submit.disabled {
   }
 }
 #fullpage {
-  /* BACKGROUNDS */
-}
-#fullpage #section8 .info-wrapper {
-  padding: 20px 0 0 250px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #433F39;
-}
-#fullpage #section8 h1, #fullpage #section8 h2, #fullpage #section8 h3, #fullpage #section8 span, #fullpage #section8 li {
-  color: #433F39;
-  margin: 0;
-  padding: 0;
-}
-#fullpage #section8 h1 {
-  font-size: 2em;
-  font-weight: 100;
-  text-transform: uppercase;
-  margin-bottom: 13px;
-}
-#fullpage #section8 .pdf li {
-  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: .7em;
-  letter-spacing: 1px;
-  list-style-image: url("../img/print");
-  text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 30px;
-}
-#fullpage #section8 h2, #fullpage #section8 h3, #fullpage #section8 li {
-  line-height: 2.1em;
-}
-#fullpage #section8 h2 {
-  font-size: 1.1em;
-  font-weight: 100;
-  letter-spacing: 4px;
-  line-height: 1.8em;
-}
-#fullpage #section8 h3 {
-  font-size: .8em;
-  font-weight: 600;
-  letter-spacing: .5px;
-  text-transform: initial;
-}
-#fullpage #section8 li {
-  font-size: .8em;
-  list-style: none;
-}
-#fullpage #section19 figcaption {
-  bottom: 160px !important;
-}
-#fullpage #section19 .full-wrapper {
-  height: 70px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-#fullpage #section19 .full-wrapper.btn {
-  bottom: 70px !important;
-  background: #B39153;
-  line-height: 70px;
-}
-#fullpage #section19 .full-wrapper.btn button {
-  background: #fff;
-  border-radius: 3px;
-  color: #B39153;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: block;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#fullpage #section19 .full-wrapper.info {
-  bottom: 0 !important;
-  background: #5A5854;
-}
-#fullpage #section19 .full-wrapper.info span {
-  line-height: 70px;
+  /* BACKGROUNDS (SKIP SECTIONS 8-9) */
 }
 #fullpage #slide1 {
   background: url("../img/section1+slide1_living-room-with-a-view-of-los-angeles.jpg");
@@ -1060,6 +975,9 @@ input.submit.disabled {
 }
 #fullpage #section7 {
   background: url("../img/section7_full-bathrooms-his-her-master-baths.jpg");
+}
+#fullpage #section10 {
+  background: url("../img/section10_exterior-with-acres-of-lush-gardens.jpg");
 }
 #fullpage #section11 {
   background: url("../img/section11+slide2_lobby-with-doorman-and-concierge.jpg");
@@ -1192,237 +1110,4 @@ input.submit.disabled {
 }
 #sidebar-wrap .sub-items {
   display: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'dtl_nobelt_regular';
-}
-
-div, span, p, a, h1, h2, h3 {
-  font-family: 'dtl_nobelt_regular';
-}
-
-a {
-  cursor: pointer;
-}
-
-.side-wrap {
-  display: none;
-  margin-left: 25px;
-  position: fixed;
-  width: 170px;
-  top: 0;
-  left: 0;
-  z-index: 80;
-}
-.side-wrap #banner {
-  box-sizing: border-box;
-  padding: 10px 10px 20px;
-  width: 100%;
-  background: #fff;
-}
-.side-wrap #banner img {
-  max-width: 100%;
-}
-.side-wrap #sidenav {
-  padding: 45px 15px 50px;
-  color: #fff;
-  font-family: 'nobel-light-stack';
-}
-.side-wrap #sidenav li {
-  margin: 6px 0;
-  font-size: .95em;
-  text-transform: uppercase;
-}
-.side-wrap #sidenav li ul {
-  display: none;
-}
-.side-wrap #sidenav li ul li {
-  margin: 0 0 0 10px;
-  font-size: 1em;
-  line-height: 1.15em;
-  text-transform: capitalize;
-}
-.side-wrap #sidenav li ul li:first-of-type {
-  margin-top: 3px;
-}
-.side-wrap #sidenav .active {
-  color: #5A5854;
-}
-.side-wrap #sidenav .active + ul {
-  display: block;
-}
-@media (min-width: 900px) {
-  .side-wrap {
-    display: block;
-  }
-}
-
-#menu-overlay {
-  align-items: center;
-  display: none;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 85;
-}
-#menu-overlay.active {
-  display: flex;
-}
-#menu-overlay #menu {
-  max-width: 900px;
-  width: 80%;
-}
-#menu-overlay #menu a {
-  color: #fff;
-  font-size: 1.5em;
-  font-weight: 200;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-@media (min-width: 450px) {
-  #menu-overlay #menu a {
-    font-size: 2em;
-  }
-}
-@media (min-width: 650px) {
-  #menu-overlay #menu a {
-    font-size: 3em;
-  }
-}
-#menu-overlay #menu li {
-  list-style: none;
-  text-align: center;
-}
-#menu-overlay #menu li:nth-child(-n+4) {
-  border-bottom: 1px solid #fff;
-  padding-bottom: 20px;
-}
-#menu-overlay #menu li:nth-child(1n+2) {
-  margin-top: 20px;
-}
-#menu-overlay #menu-close {
-  height: 100px;
-  position: absolute;
-  width: 100px;
-  top: 0;
-  right: 0;
-}
-#menu-overlay #menu-close:before, #menu-overlay #menu-close:after {
-  content: "";
-  display: inline-block;
-  height: 2px;
-  margin: auto;
-  position: absolute;
-  width: 60px;
-  background: #fff;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-#menu-overlay #menu-close:before {
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-}
-#menu-overlay #menu-close:after {
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-}
-#menu-overlay .legal-disclosures {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding-bottom: 15px;
-  position: absolute;
-  width: 290px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-#menu-overlay .legal-disclosures a {
-  color: #fff;
-  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-}
-
-.overlay {
-  display: flex;
-  height: 100vh;
-  position: fixed;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  z-index: 90;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.overlay.box {
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  display: none;
-}
-.overlay.box.active {
-  display: flex;
-}
-.overlay.box .inner-box {
-  position: relative;
-}
-.overlay.box .inner-box .close {
-  display: inline-block;
-  height: 40px;
-  width: 100%;
-  top: 0;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-}
-.overlay.box .inner-box .central-box {
-  box-sizing: border-box;
-  height: 100%;
-  overflow-y: scroll;
-}
-@media (max-width: 699px) {
-  .overlay.box .inner-box {
-    height: 100%;
-    width: 100%;
-  }
-}
-@media (min-width: 700px) {
-  .overlay.box .inner-box {
-    height: 80%;
-    width: 70%;
-    max-height: 500px;
-    max-width: 700px;
-  }
-}
-
-@media (orientation: portrait) {
-  .fp-controlArrow {
-    display: none !important;
-  }
-}
-@media (orientation: portrait) and (min-width: 650px) {
-  .fp-controlArrow {
-    display: block;
-  }
-}
-
-@media (orientation: landscape) {
-  .fp-controlArrow {
-    transform: scale(0.5, 0.5) translateY(50%);
-  }
-}
-@media (orientation: landscape) and (min-width: 650px) {
-  .fp-controlArrow {
-    transform: scale(1, 1) translateY(50%) !important;
-  }
 }
