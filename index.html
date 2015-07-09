@@ -181,7 +181,7 @@ common facilities. Please review the association budget and Final Subdivision Pu
 	<header id="dynamic-header">
 		<h2>Penthouse 50</h2>
 		<div class="btn-wrapper">
-			<button>Contact Us</button>
+			<button class="ns-sect-20">Contact Us</button>
 		</div>
 	</header>
 
@@ -220,7 +220,11 @@ common facilities. Please review the association budget and Final Subdivision Pu
 
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#fullpage').fullpage();
+			$('#fullpage').fullpage({
+				loopHorizontal: true,
+				scrollOverflow: true,
+				slidesNavigation: true
+			});
 		});
 	</script>
 </body>

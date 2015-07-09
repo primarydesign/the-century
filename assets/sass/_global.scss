@@ -8,39 +8,3 @@ button, input[type="submit"], a {
 h1, h2, h3, h4 {
 	letter-spacing: 2px;
 }
-
-//CENTRALIZED Z-INDEXING
-#dynamic-header {z-index: 50;}
-#sidebar-wrap {z-index: 60;}
-
-.section, .slide {
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	margin: 0;padding:0;
-	padding-top: 90px; //header
-}
-.section {
-	figcaption, footer {
-		bottom: 20% !important;
-		padding: 20px 10% !important;
-		position: absolute;
-		width: 100%;
-		z-index: 10;
-		background:rgba(0,0,0,0.5);
-		span, h1, p, {
-			color: #fff;
-			font-family: $nobel;
-			font-size: 1.3em;
-			letter-spacing: 1px;
-			text-align: center;
-		}
-	}
-}
-.penthouse, .features, .neighborhood {
-	figcaption {
-		padding: 25px 10px;
-		font-size: 1.1em;
-		p {font-family:$nobel;}
-	}
-}
