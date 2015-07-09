@@ -980,6 +980,7 @@ input.submit.disabled {
   font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .7em;
   letter-spacing: 1px;
+  list-style-image: url("../img/print");
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 30px;
