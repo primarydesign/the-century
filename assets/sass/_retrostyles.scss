@@ -51,7 +51,7 @@ h2, h3 {
 	text-transform:uppercase;
 	text-align:left;
 }
-h2 {	
+h2 {
 	font-size:1.5em;
 	padding:1em 0;
 	letter-spacing:1px;
@@ -59,7 +59,7 @@ h2 {
 
 header h2 {
 	text-align:center;
-	line-height:10px !important;	
+	line-height:10px !important;
 	font-size: 1em !important;
 	padding: 1.5em 0px !important;
 }
@@ -88,23 +88,23 @@ p {
     display: none;
 }
 .dining-info p {
-font-family:'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;	
+font-family:'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 sup {
 	font-size:small;
 }
 
-figcaption {
-	font-family:'dtl_nobelt_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-	bottom: 0 !important;
-	position: absolute;
-	color: rgb(255, 255, 255);
-	margin: auto;
-	width: 100%;
-	font-weight:200;
-	letter-spacing:1px;
-	padding:15px !important;
-}
+// figcaption {
+// 	font-family:'dtl_nobelt_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+// 	bottom: 0 !important;
+// 	position: absolute;
+// 	color: rgb(255, 255, 255);
+// 	margin: auto;
+// 	width: 100%;
+// 	font-weight:200;
+// 	letter-spacing:1px;
+// 	padding:15px !important;
+// }
 
 /* Floor Plan Section */
 
@@ -137,16 +137,16 @@ figcaption {
 .btn-zoom, .btn-print {
 	list-style-position:inside;
 	line-height: 2em;
-	
+
 }
 
-.btn-print li:before { 
-	content:'';  
+.btn-print li:before {
+	content:'';
 	display:inline-block;
 	height:16px;
 	width:14px;
 	background:url('../images/print-icon.svg') no-repeat;
-	margin-right:5px; 
+	margin-right:5px;
 }
 
 .plan-features {
@@ -167,14 +167,14 @@ figcaption {
 }
 
 /*
-.plan-features li:before { 
+.plan-features li:before {
 	content:"\25C7";
 	margin-right:10px;
 	position:relative;
 	bottom:1px;
 }
 */
-	
+
 
 button {
 	text-transform:uppercase;
@@ -208,13 +208,13 @@ button {
 .property-features p {
 	font-family:'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size:1.25em;
-	line-height:1.5em;	
+	line-height:1.5em;
 }
 
 /* Dining Section */
 
 .dining-info h2, .property-features h2, .highlights h2, .contact h2 {
-	padding-top:150px;	
+	padding-top:150px;
 }
 
 .dining-info, .property-features, .highlights {
@@ -225,14 +225,14 @@ button {
 
 @media (max-width: 900px) {
 
-figcaption {
-line-height: 20px;
-letter-spacing: 0;
-font-size: 14px;
-line-height: 18px !important;
-text-align:left;
-
-}
+// figcaption {
+// line-height: 20px;
+// letter-spacing: 0;
+// font-size: 14px;
+// line-height: 18px !important;
+// text-align:left;
+//
+// }
 
 .floorplan {
 margin-top:75px;
@@ -247,7 +247,7 @@ margin-top:75px;
 	text-align:left;
 	padding:0 30px;
  }
- 
+
  .highlights ul {
 	 /*
 	 list-style-image:url(../images/diamond-bullet-point-white.png);
@@ -261,8 +261,8 @@ margin-top:75px;
 	content:"\25C7";
 	margin-right:10px;
 	position:relative;
-	bottom:1px; 
-} 
+	bottom:1px;
+}
 
  .highlights li {
     font-size: 1em;
@@ -270,8 +270,8 @@ margin-top:75px;
 	list-style-position: outside !important;
 	padding-bottom: 15px;
 }
- 
- 
+
+
  /* Neighborhood Section */
 
 .place h3 {
@@ -286,10 +286,10 @@ padding: 0px 10px;
 line-height:20px !important;
 }
 
-figcaption h3 {
-	   font-family: 'dtl_nobelt_bold', 'Helvetica Neue', Arial, sans-serif !important;
-	   font-size:.8em;
-}
+// figcaption h3 {
+// 	   font-family: 'dtl_nobelt_bold', 'Helvetica Neue', Arial, sans-serif !important;
+// 	   font-size:.8em;
+// }
 
 
  footer {
@@ -334,15 +334,15 @@ figcaption h3 {
 	padding-right: 100px;
  }
 
-.floorplan-info { 
+.floorplan-info {
 padding: 0 50px 150px 250px;
  }
 
-figcaption h3 {
-	display:none;
-}
- 
-.property-features, .highlights { 
+// figcaption h3 {
+// 	display:none;
+// }
+
+.property-features, .highlights {
 	paddig-bottom:0;
 }
 
@@ -360,7 +360,7 @@ figcaption h3 {
 	 line-height:2em;
      line-height: 1.5em;
  }
- 
+
  .cbp-mc-submit-wrap, .contact h2 {
 text-align:left !important;
 padding-left: 30px !important;
@@ -368,10 +368,10 @@ padding-left: 30px !important;
 
 
 }
- 
+
 @media (min-width:1000px) {
 
-.floorplan {	  
+.floorplan {
 	float: right;
 	width: 50%;
 }
@@ -386,31 +386,31 @@ padding-left: 30px !important;
 .highlights, .property-features {
 	padding-right: 250px;
  }
- 
+
  .dining-info {
 	padding-left: 250px;
 	padding-right: 200px;
  }
-	  
+
 .property-features p {
     font-size: 1.5em;
-    line-height: 1.6em;	 
+    line-height: 1.6em;
  }
- 
+
  footer {
 	font-size:14px;
 	line-height:20px;
 	 }
 
  }
- 
+
 
  @media (min-width:700px) and (max-width:1599px) {
 	  .contact {
 		 padding: 0 50px 0 250px;
 	 }
  }
- 
+
  @media (min-width:1600px) {
 	 .contact {
 		 padding: 0 250px;
@@ -419,14 +419,14 @@ padding-left: 30px !important;
 		 font-size: 1.2em;
 	 }
  }
- 
+
 
 @media all and (max-width:640px)  {
-	
+
 .plan-features li {
 	list-style-type:none;
 	list-style-position:outside;
-	
+
 }
 
 .plan-features li:before, .highlights li:before {
@@ -454,13 +454,13 @@ footer {
 
 /* iPhone 6 + 6 Plus Landscape */
 
-@media (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-    figcaption {
-		font-size:10px;
-		line-height:14px;
-		bottom:0px;
-	}
+@media (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+   //  figcaption {
+	// 	font-size:10px;
+	// 	line-height:14px;
+	// 	bottom:0px;
+	// }
 	.side-wrap #sidenav {
     	display:none;
 }

@@ -1,75 +1,77 @@
 #fullpage {
 
-	.section, .slide {
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover;
-	}
-
-	#section1 {
-		#slide1 {
-			background: url('../img/section1+slide1_living-room-with-a-view-of-los-angeles.jpg');
-		}
-		#slide2 {
-			background: url('../img/section11+slide2_lobby-with-doorman-and-concierge.jpg');
-		}
-		#slide3 {
-			background: url('../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg');
+	/* FIGURECAPTIONS */
+	.slides {
+		figcaption {
+			font-size: 2em;
+			font-weight: 200;
+			p {font-family: $nobel-light;}
 		}
 	}
-	#section2 {
-		background: url('../img/section2+section20_terrace-breathtaking-views-of-la.jpg');
-	}
-	#section3 {
-		background: url('../img/section3_expansive-great-room-dramatic-views-terrace-and-two-fireplaces.jpg');
-	}
-	#section4 {
-		background: url('../img/section4_chefs-kitchen-with-terrace-and-exceptional-appliances.jpg');
-	}
-	#section5 {
-		background: url('../img/section5_stunning-formal-dining-room.jpg');
-	}
-	#section6 {
-		background: url('../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg');
-	}
-	#section7 {
-		background: url('../img/section7_full-bathrooms-his-her-master-baths.jpg');
-	}
-	#section8 {
-		background: url('../img/section18_getty-museum-featuring-art-photography-architecture-and-gardens.jpg');
-	}
-	#section9 {
-		background: url('../img/section10_exterior-with-acres-of-lush-gardens.jpg');
-	}
-	#section10 {
-		background: url('../img/section11+slide2_lobby-with-doorman-and-concierge.jpg');
-	}
-	#section12 {
-		background: url('../img/section12_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg');
-	}
-	#section13 {
-		background: url('../img/section13_fitness-center-with-yoga-pilates-studio.jpg');
-	}
-	#section14 {
-		background: url('../img/section14_plush-multimedia-screening-room-lounge.jpg');
-	}
-	#section15 {
-		background: url('../img/section15_on-site-restaurant-hinoki-and-the-bird-from-chef-david-meyers.jpg');
-	}
-	#section16 {
-		background: url('../img/section16_outdoor-lounge-and-firepit.jpg');
-	}
-	#section17 {
-		background: url('../img/section17_botique-shopping-destination-rodeo-drive.jpg');
-	}
-	#section181 {
-		background: url('../img/section18_getty-museum-featuring-art-photography-architecture-and-gardens.jpg');
+	.penthouse, .features, .neighborhood {
+		figcaption {
+			padding: 25px 10px;
+			font-size: 1.1em;
+			p {font-family:$nobel;}
+		}
 	}
 	#section19 {
-		background: url('../img/section19_nearby-golf-courses-and-country-clubs.jpg');
+		figcaption {
+			bottom: 160px !important;
+		}
+		.full-wrapper {
+			height: 70px;
+			margin:0;padding:0;
+			text-align: center;
+			&.btn {
+				bottom: 70px !important;
+				background: $bronze;
+				line-height: 70px;
+				button {
+					background: #fff;
+					border-radius: 3px;
+					color: $bronze;
+					font-weight: bold;
+					text-transform: uppercase;
+					display: block;
+					margin: auto;
+					position: absolute;
+					top:50%;left:50%;
+					transform: translate(-50%,-50%);
+				}
+			}
+			&.info {
+				bottom: 0 !important;
+				background: $brown;
+				span {
+					line-height: 70px;
+				}
+			}
+		}
 	}
-	#section20 {
-		background: url('../img/section2+section20_terrace-breathtaking-views-of-la.jpg');
-	}
+
+	/* BACKGROUNDS */
+	#slide1 {background: url('../img/section1+slide1_living-room-with-a-view-of-los-angeles.jpg');}
+	#slide2 {background: url('../img/section11+slide2_lobby-with-doorman-and-concierge.jpg');}
+	#slide3 {background: url('../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg');}
+	#section2 {background: url('../img/section2+section20_terrace-breathtaking-views-of-la.jpg');}
+	#section3 {background: url('../img/section3_expansive-great-room-dramatic-views-terrace-and-two-fireplaces.jpg');}
+	#section4 {background: url('../img/section4_chefs-kitchen-with-terrace-and-exceptional-appliances.jpg');}
+	#section5 {background: url('../img/section5_stunning-formal-dining-room.jpg');}
+	#section6 {background: url('../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg');}
+	#section7 {background: url('../img/section7_full-bathrooms-his-her-master-baths.jpg');}
+	//#section8 {background:;}
+	//#section9 {background:;}
+	//#section10 {background:;}
+	#section11 {background: url('../img/section11+slide2_lobby-with-doorman-and-concierge.jpg');}
+	#section12 {background: url('../img/section12_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg');}
+	#section13 {background: url('../img/section13_fitness-center-with-yoga-pilates-studio.jpg');}
+	#section14 {background: url('../img/section14_plush-multimedia-screening-room-lounge.jpg');}
+	#section15 {background: url('../img/section15_on-site-restaurant-hinoki-and-the-bird-from-chef-david-meyers.jpg');}
+	#section16 {background: url('../img/section16_outdoor-lounge-and-firepit.jpg');}
+	#section17 {background: url('../img/section17_botique-shopping-destination-rodeo-drive.jpg');}
+	#section18 {background: url('../img/section18_getty-museum-featuring-art-photography-architecture-and-gardens.jpg');}
+	#section19 {background: url('../img/section19_nearby-golf-courses-and-country-clubs.jpg');}
+	#section20 {background: url('../img/section2+section20_terrace-breathtaking-views-of-la.jpg');}
 
 }

@@ -1,3 +1,4 @@
+* {margin:0;padding:0;}
 div, span, p, a, li, h1, h2, h3 {
 	font-family: $nobel-light;
 }
@@ -11,3 +12,31 @@ h1, h2, h3, h4 {
 //CENTRALIZED Z-INDEXING
 #dynamic-header {z-index: 50;}
 #sidebar-wrap {z-index: 60;}
+
+#fullpage {
+	.section, .slide {
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+	.section {
+		figcaption, .full-wrapper {
+			bottom: 20% !important;
+			padding: 20px 10% !important;
+			position: absolute;
+			width: 100%;
+			z-index: 10;
+			background:rgba(0,0,0,0.5);
+			span, h1, p, {
+				color: #fff;
+				font-family: $nobel;
+				font-size: 1.3em;
+				letter-spacing: 1px;
+				text-align: center;
+			}
+		}
+	}
+	.full-wrapper {
+
+	}
+}

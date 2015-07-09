@@ -300,17 +300,17 @@ a {cursor: pointer;}
 }
 
 figcaption {
-	font-family:'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	bottom: 0 !important;
-	position: absolute;
-	color: rgb(255, 255, 255);
-	margin: auto;
-	background: rgba(0,0,0,0.5);
-	width: 100%;
-	line-height:1.5em;
-	font-weight:200;
-	letter-spacing:1px;
-	padding:10px 0;
+	// font-family:'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	// bottom: 0 !important;
+	// position: absolute;
+	// color: rgb(255, 255, 255);
+	// margin: auto;
+	// background: rgba(0,0,0,0.5);
+	// width: 100%;
+	// line-height:1.5em;
+	// font-weight:200;
+	// letter-spacing:1px;
+	// padding:10px 0;
 
 	@media (min-width: 768px) and (-webkit-device-pixel-ratio: 1){
 		line-height: 2.5em;

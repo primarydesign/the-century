@@ -240,8 +240,13 @@ html.fp-enabled,
   font-weight: normal;
   font-style: normal;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 div, span, p, a, li, h1, h2, h3 {
-  font-family: "dtl_nobelt_light", sans-serif;
+  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 button, input[type="submit"], a {
@@ -258,6 +263,27 @@ h1, h2, h3, h4 {
 
 #sidebar-wrap {
   z-index: 60;
+}
+
+#fullpage .section, #fullpage .slide {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#fullpage .section figcaption, #fullpage .section .full-wrapper {
+  bottom: 20% !important;
+  padding: 20px 10% !important;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+}
+#fullpage .section figcaption span, #fullpage .section figcaption h1, #fullpage .section figcaption p, #fullpage .section .full-wrapper span, #fullpage .section .full-wrapper h1, #fullpage .section .full-wrapper p {
+  color: #fff;
+  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 /* CSS Document */
@@ -343,18 +369,6 @@ sup {
   font-size: small;
 }
 
-figcaption {
-  font-family: 'dtl_nobelt_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-  bottom: 0 !important;
-  position: absolute;
-  color: white;
-  margin: auto;
-  width: 100%;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 15px !important;
-}
-
 /* Floor Plan Section */
 .floorplan-info {
   text-transform: uppercase;
@@ -413,7 +427,7 @@ figcaption {
 }
 
 /*
-.plan-features li:before { 
+.plan-features li:before {
 	content:"\25C7";
 	margin-right:10px;
 	position:relative;
@@ -465,14 +479,6 @@ button {
 }
 
 @media (max-width: 900px) {
-  figcaption {
-    line-height: 20px;
-    letter-spacing: 0;
-    font-size: 14px;
-    line-height: 18px !important;
-    text-align: left;
-  }
-
   .floorplan {
     margin-top: 75px;
   }
@@ -520,11 +526,6 @@ button {
   line-height: 20px !important;
 }
 
-figcaption h3 {
-  font-family: 'dtl_nobelt_bold', 'Helvetica Neue', Arial, sans-serif !important;
-  font-size: .8em;
-}
-
 footer {
   color: #ffffff;
   background: #49423c;
@@ -565,10 +566,6 @@ footer {
 
   .floorplan-info {
     padding: 0 50px 150px 250px;
-  }
-
-  figcaption h3 {
-    display: none;
   }
 
   .property-features, .highlights {
@@ -668,12 +665,6 @@ footer {
 }
 /* iPhone 6 + 6 Plus Landscape */
 @media (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  figcaption {
-    font-size: 10px;
-    line-height: 14px;
-    bottom: 0px;
-  }
-
   .side-wrap #sidenav {
     display: none;
   }
@@ -1001,18 +992,65 @@ input.submit.disabled {
     font-size: 1em;
   }
 }
-#fullpage .section, #fullpage .slide {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+#fullpage {
+  /* FIGURECAPTIONS */
+  /* BACKGROUNDS */
 }
-#fullpage #section1 #slide1 {
+#fullpage .slides figcaption {
+  font-size: 2em;
+  font-weight: 200;
+}
+#fullpage .slides figcaption p {
+  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#fullpage .penthouse figcaption, #fullpage .features figcaption, #fullpage .neighborhood figcaption {
+  padding: 25px 10px;
+  font-size: 1.1em;
+}
+#fullpage .penthouse figcaption p, #fullpage .features figcaption p, #fullpage .neighborhood figcaption p {
+  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#fullpage #section19 figcaption {
+  bottom: 160px !important;
+}
+#fullpage #section19 .full-wrapper {
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#fullpage #section19 .full-wrapper.btn {
+  bottom: 70px !important;
+  background: #B39153;
+  line-height: 70px;
+}
+#fullpage #section19 .full-wrapper.btn button {
+  background: #fff;
+  border-radius: 3px;
+  color: #B39153;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#fullpage #section19 .full-wrapper.info {
+  bottom: 0 !important;
+  background: #5A5854;
+}
+#fullpage #section19 .full-wrapper.info span {
+  line-height: 70px;
+}
+#fullpage #slide1 {
   background: url("../img/section1+slide1_living-room-with-a-view-of-los-angeles.jpg");
 }
-#fullpage #section1 #slide2 {
+#fullpage #slide2 {
   background: url("../img/section11+slide2_lobby-with-doorman-and-concierge.jpg");
 }
-#fullpage #section1 #slide3 {
+#fullpage #slide3 {
   background: url("../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg");
 }
 #fullpage #section2 {
@@ -1033,13 +1071,7 @@ input.submit.disabled {
 #fullpage #section7 {
   background: url("../img/section7_full-bathrooms-his-her-master-baths.jpg");
 }
-#fullpage #section8 {
-  background: url("../img/section18_getty-museum-featuring-art-photography-architecture-and-gardens.jpg");
-}
-#fullpage #section9 {
-  background: url("../img/section10_exterior-with-acres-of-lush-gardens.jpg");
-}
-#fullpage #section10 {
+#fullpage #section11 {
   background: url("../img/section11+slide2_lobby-with-doorman-and-concierge.jpg");
 }
 #fullpage #section12 {
@@ -1060,7 +1092,7 @@ input.submit.disabled {
 #fullpage #section17 {
   background: url("../img/section17_botique-shopping-destination-rodeo-drive.jpg");
 }
-#fullpage #section181 {
+#fullpage #section18 {
   background: url("../img/section18_getty-museum-featuring-art-photography-architecture-and-gardens.jpg");
 }
 #fullpage #section19 {
@@ -1071,30 +1103,28 @@ input.submit.disabled {
 }
 
 #dynamic-header {
-  height: 70px;
+  height: 60px;
+  width: 100%;
+  box-sizing: content-box;
+  padding: 10px 0;
   position: fixed;
   top: 0;
-  width: 100%;
-  background: #5A5854;
   z-index: 50;
+  background: #5A5854;
+  border-bottom: 10px solid #E6D3BC;
   text-align: center;
-  padding: 0;
-}
-#dynamic-header * {
-  margin: 0;
-  padding: 0;
 }
 #dynamic-header h2 {
-  line-height: 70px !important;
+  line-height: 60px !important;
   padding: 0 !important;
   text-align: center;
-  font-family: "dtl_nobelt_light", sans-serif;
+  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.7em !important;
   font-weight: 100;
   letter-spacing: 4px;
 }
 #dynamic-header .btn-wrapper {
-  height: 70px;
+  height: 100%;
   width: 200px;
   position: absolute;
   top: 0;
@@ -1107,6 +1137,8 @@ input.submit.disabled {
 #dynamic-header .btn-wrapper button {
   height: 30px;
   width: 100px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-size: .6em;
   font-weight: bold;
@@ -1143,7 +1175,7 @@ input.submit.disabled {
   line-height: 1.8em;
 }
 #sidebar-wrap .sidenav .main-items a {
-  font-family: "dtl_nobelt_light", sans-serif;
+  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #sidebar-wrap .sidenav .sub-items {
   color: #E6D3BC;
@@ -1155,13 +1187,16 @@ input.submit.disabled {
   line-height: 1.6em;
 }
 #sidebar-wrap .sidenav .sub-items a {
-  font-family: "dlt_nobelt_regular", sans-serif;
+  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #sidebar-wrap .sidenav li:hover {
   color: #5A5854;
 }
 #sidebar-wrap .sidenav li.active {
   color: #5A5854;
+}
+#sidebar-wrap .sub-items {
+  display: none;
 }
 
 * {
@@ -1318,7 +1353,7 @@ a {
 }
 #menu-overlay .legal-disclosures a {
   color: #fff;
-  font-family: "dtl_nobelt_light", sans-serif;
+  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.1em;
 }
 
@@ -1399,7 +1434,7 @@ a {
   position: absolute;
 }
 #floorplan-zoom .close span {
-  font-family: "dtl_nobelt_light", sans-serif;
+  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
 #floorplan-zoom #floorplan {
@@ -1427,7 +1462,7 @@ a {
 }
 #privacy-disclosure article h2, #privacy-disclosure article p, #terms-disclosure article h2, #terms-disclosure article p {
   color: #000;
-  font-family: "dtl_nobelt_light", sans-serif;
+  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #privacy-disclosure article h2, #terms-disclosure article h2 {
   line-height: 40px;
@@ -1453,19 +1488,6 @@ a {
   justify-content: center;
 }
 
-figcaption {
-  font-family: 'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  bottom: 0 !important;
-  position: absolute;
-  color: white;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  line-height: 1.5em;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 10px 0;
-}
 @media (min-width: 768px) and (-webkit-device-pixel-ratio: 1) {
   figcaption {
     line-height: 2.5em;
