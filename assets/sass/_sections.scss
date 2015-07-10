@@ -35,11 +35,18 @@
 		.pdf {
 			margin-top: 20px;
 			li {
-				list-style-image: url('../img/print-icon.svg');
-				list-style-position: inside;
+				list-style: none;
 				font-family: $nobel-light;
 				font-size: .7em;
 				text-transform: uppercase;
+				&:before {
+					content: '';
+					display: inline-block;
+					height: 16px;width:14px;
+					//position: absolute;
+					margin-right: 5px;
+					background: url('../img/print-icon.svg');
+				}
 			}
 		}
 		h2 {
@@ -60,6 +67,20 @@
 				font-size: .8em;
 				letter-spacing: .8px;
 				line-height: 1.4em;
+			}
+		}
+	}
+	#section9 {//floorplan image
+		.inner-wrap {
+			padding-left:0;
+			//background: red;
+			img {
+				margin-top: 90px;
+				max-width: 1200px;
+				position: absolute;
+				top:50%;left:50%;
+				transform: translate(-50%,-50%);
+				width:100%;
 			}
 		}
 	}
