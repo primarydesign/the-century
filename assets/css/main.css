@@ -948,6 +948,26 @@ form#contact .submit {
   letter-spacing: .8px;
   line-height: 1.4em;
 }
+#fullpage #section10 .inner-wrap {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+#fullpage #section10 .inner-wrap h2 {
+  font-size: 2.3em;
+  font-weight: normal;
+  letter-spacing: 3.5px;
+  text-align: center;
+  margin: 0;
+  padding: 100px 0 200px;
+}
+#fullpage #section10 .inner-wrap p {
+  font-size: 1.2em;
+  text-align: justify;
+  display: block;
+  margin: 0 auto;
+  max-width: 900px;
+  overflow-x: visible;
+}
 #fullpage #section15 figcaption .logo {
   display: block;
   height: 100px;
