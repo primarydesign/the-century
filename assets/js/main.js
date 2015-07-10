@@ -23,7 +23,7 @@ $(document).ready(function() {
 		$index = index - 1;
 		for(var i = 0; i < sections.length; i++){
 			if ($index >= sections[i].min && $index <= sections[i].max){
-				$('#dynamic-header h2').text(sections[i].title + "/ " + index);
+				$('#dynamic-header h2').text(sections[i].title);
 			}
 		}
 	}
