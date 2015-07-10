@@ -39,10 +39,10 @@ h1, h2, h3, h4 {
 }
 .full-banner {
 	padding: 30px 40px;
-	position: relative;
+	position: absolute;
 	text-align: center;
 	width: 100%;
-	background: red;
+	//background: red;
 	span {
 		display: block;
 		position: absolute;

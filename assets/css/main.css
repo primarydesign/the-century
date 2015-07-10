@@ -288,10 +288,9 @@ h1, h2, h3, h4 {
 
 .full-banner {
   padding: 30px 40px;
-  position: relative;
+  position: absolute;
   text-align: center;
   width: 100%;
-  background: red;
 }
 .full-banner span {
   display: block;
@@ -1001,6 +1000,24 @@ form#contact .submit {
 }
 #fullpage #section16 .feature-items li sup {
   font-size: .5em;
+}
+#fullpage #section16 footer {
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding: 30px 40px;
+  position: absolute;
+  text-align: center;
+  background: #5A5854;
+}
+#fullpage #section16 footer span {
+  height: 100%;
+  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: normal;
+  text-align: center;
 }
 #fullpage #section19 {
   position: relative;
