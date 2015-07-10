@@ -63,6 +63,21 @@
 			}
 		}
 	}
+
+	#section15 { //features-restaurant
+		figcaption {
+			.logo {
+				display: block;
+				height: 100px;
+				margin: 0 auto 20px;
+			}
+			p {
+				font-family: $nobel;
+				font-size: 1em;
+			}
+		}
+	}
+
 	#section16 {//additional highlights
 		h2, li {color: #fff;}
 		h2 {
@@ -88,6 +103,7 @@
 			}
 		}
 	}
+
 	#section19 {
 		position: relative;
 
@@ -130,6 +146,7 @@
 		}
 
 	}
+
 	#section20 {
 		padding-top: 90px !important;
 		h2,form, footer {position:static;}

@@ -948,6 +948,15 @@ form#contact .submit {
   letter-spacing: .8px;
   line-height: 1.4em;
 }
+#fullpage #section15 figcaption .logo {
+  display: block;
+  height: 100px;
+  margin: 0 auto 20px;
+}
+#fullpage #section15 figcaption p {
+  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
 #fullpage #section16 h2, #fullpage #section16 li {
   color: #fff;
 }
@@ -1155,7 +1164,7 @@ form#contact .submit {
 #sidebar-wrap .sub-items {
   display: none;
 }
-#sidebar-wrap li.active .sub-items {
+#sidebar-wrap li.active .sub-items, #sidebar-wrap li:hover .sub-items {
   display: block;
 }
 
