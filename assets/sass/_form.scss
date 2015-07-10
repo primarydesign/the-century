@@ -6,7 +6,7 @@ form#contact {//namespace
 
 	* {color:$blackish;margin:0;padding:0;}
 
-	//LAYOUT OVERRIDES
+	//PLUGIN OVERRIDES
 	.cbp-mc-column {padding: 0 30px;}
 	.cbp-mc-submit-wrap {padding: 30px 0 0;}
 
@@ -35,8 +35,8 @@ form#contact {//namespace
       border-radius: 2px;
       resize: none;}
 	.error {
-		 height: 15px;}
- 	.submit {
+		height: 15px;}
+	.submit {
 		height: 40px;
 		margin: 0 auto;
 		width: 150px;
