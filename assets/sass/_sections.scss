@@ -68,7 +68,16 @@
 		padding-top: 90px !important;
 		h2,form, footer {position:static;}
 
-		h2 {margin:0;padding: 30px 0 10px!important;text-align:center !important;}
+		.contact-wrap {
+			margin: 0 auto 30px;
+			max-width: 700px;
+			h2 {
+				color: $brown;
+				margin:0;
+				padding: 30px 0 10px 30px;
+				text-align: left;
+			}
+		}
 	}
 
 }
