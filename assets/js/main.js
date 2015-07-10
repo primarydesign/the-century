@@ -1,1 +1,269 @@
-$(document).ready(function(){function e(){0!==$(".overlay.active").length?($.fn.fullpage.setAllowScrolling(!1),$.fn.fullpage.setKeyboardScrolling(!1)):($.fn.fullpage.setAllowScrolling(!0),$.fn.fullpage.setKeyboardScrolling(!0))}function a(){var e=$("body").attr("class");e=e.replace(/fp-viewing-/,"").replace(/-slide\d+/,""),e=parseInt(e);for(var a=0;a<n.length;a++)e>=n[a].min&&e<=n[a].max&&s.text(n[a].title)}function i(){var e=$("body").attr("class");e=e.replace(/fp-viewing-/,"").replace(/-slide\d+/,""),e=parseInt(e);for(var a=0;a<n.length;a++){if(e>=n[a].min&&e<=n[a].max){var i=n[a].min;$("#sidenav > ul > li a").removeClass("active"),$(".toSect"+(i+1)).addClass("active")}if("undefined"!=typeof n[a].subs)for(var l=0;l<n[a].subs.length;l++){var t=n[a].subs[l].index;e==t&&($("#sidenav li li a").removeClass("active"),$(".toSect"+(t+1)).addClass("active"))}}}function l(){var e=$("body").attr("class"),a=e.replace(/fp-viewing-/,"").replace(/-slide\d+/,"");e.replace(/fp-viewing-\d+-slide/,""),0==a&&$.fn.fullpage.moveSlideRight()}function t(){var e=!1,a=!1;$("form .required").length==$("form .required:not(.empty)").length&&(e=!0),$("form input:not(.noval,.submit)").length==$("form input:not(.noval,.submit).valid").length&&(a=!0),$(".submit").hasClass("disengage")?$(".submit").attr("disabled","").addClass("disabled"):1==e&1==a?$(".submit").removeAttr("disabled").removeClass("disabled"):$(".submit").attr("disabled","").addClass("disabled")}$("#fullpage").fullpage({verticalCentered:!1,slidesNavigation:!0,scrollOverflow:!0,css3:!0}),$("#menu a, #sidenav li a").click(function(){var e=$(this).attr("class");e=e.replace("toSect",""),e=parseInt(e),$.fn.fullpage.moveTo(e),$("#menu-overlay").removeClass("active")}),$(".contact-btn").click(function(){$.fn.fullpage.moveTo(15)}),$("#banner img").click(function(){$.fn.fullpage.moveTo(1)}),$('[class^="open-"]').click(function(){var e=$(this).attr("class");e=e.match(/open-([a-zA-Z0-9-]+)/)[1],$("#"+e).addClass("active")}),$(".overlay .close").click(function(){var e=$(this).attr("class");e=e.match(/close-([a-zA-Z0-9-]+)/)[1],$("#"+e).removeClass("active")}),setInterval(e,1);var n=[{title:"Penthouse 901",min:0,max:0},{title:"Penthouse 901",min:1,max:3,subs:[{name:"Terrace",index:1},{name:"Great Room",index:2},{name:"Kitchen",index:3}]},{title:"Floor Plan",min:4,max:4},{title:"Property Features",min:5,max:10,subs:[{name:"Service",index:6},{name:"Pool",index:7},{name:"Fitness",index:8},{name:"Dining",index:9},{name:"More",index:10}]},{title:"Neighborhood",min:11,max:13,subs:[{name:"Santa Monica Beach",index:11},{name:"Santa Monica Place",index:12},{name:"Tongva Park",index:13}]},{title:"Contact Us",min:14,max:14}],s=$("#htext");setInterval(a,1),setInterval(i,1),setInterval(l,7e3);var r={email:/[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+([.][a-zA-Z]+)+$/,phone:/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/};$("#email").on("keydown keyup blur",function(){var e=$(this).val().trim();-1===e.search(r.email)?$(this).addClass("invalid").removeClass("valid"):0===e.search(r.email)&&$(this).addClass("valid").removeClass("invalid")}),$("#phone").on("keydown keyup blur",function(){var e=$(this).val().trim();-1===e.search(r.phone)?$(this).addClass("invalid").removeClass("valid"):0===e.search(r.phone)&&$(this).addClass("valid").removeClass("invalid")}),$("form .required").each(function(){var e=$(this).val().trim();0===e.length&&$(this).addClass("empty")}),$("form .field").on("blur",function(){$(this).addClass("touched")}),$("form .required").on("keydown keyup blur",function(){var e=$(this).val().trim();0===e.length?$(this).addClass("empty").removeClass("valid").removeClass("invalid"):$(this).removeClass("empty")}),$(".submit").attr("disabled","").addClass("disabled"),setInterval(t,1)});
+$(document).ready(function() {
+	//INITIALIZE FULLPAGE
+	$('#fullpage').fullpage({
+		verticalCentered: false,
+		slidesNavigation: true,
+		scrollOverflow: true,
+		css3: true
+	});
+
+	//MENU NAVLINKS
+	//Clicking nav and menu links scroll to eponymous section
+	//AND remove `active` class from menu overlay.
+	$('#menu a, #sidenav li a').click(function(){
+		var $to = $(this).attr('class');
+		$to = $to.replace('toSect','');
+		$to = parseInt($to);
+		$.fn.fullpage.moveTo($to);
+		$('#menu-overlay').removeClass('active');
+	});
+
+	//CONTACT BUTTONS
+	//Clicking contact buttons scrolls to contact form.
+	$('.contact-btn').click(function(){
+		$.fn.fullpage.moveTo(15);
+	});
+
+	//BANNER TO TOP
+	//Click banner to move to top of page.
+	$('#banner img').click(function(){
+		$.fn.fullpage.moveTo(1);
+	});
+
+	//OVERLAY OPENING & CLOSING
+	//Open element with id matching open-<id-name> class pattern.
+	$('[class^="open-"]').click(function(){
+		var $name =	$(this).attr('class');
+		$name = $name.match(/open-([a-zA-Z0-9-]+)/)[1];
+		$('#'+$name).addClass('active');
+	});
+	//Close element with id matching close-<id-name> class pattern.
+	$('.overlay .close').click(function(){
+		var $name =	$(this).attr('class');
+		$name = $name.match(/close-([a-zA-Z0-9-]+)/)[1];
+		$('#'+$name).removeClass('active');
+	});
+
+	//DISABLE SCROLLING
+	//Disables scrolling if overlay active;
+	//AND reenables it otherwise;
+	function disableScroll() {
+		if ($('.overlay.active').length !== 0) {
+			$.fn.fullpage.setAllowScrolling(false);
+			$.fn.fullpage.setKeyboardScrolling(false);
+		} else {
+			$.fn.fullpage.setAllowScrolling(true);
+			$.fn.fullpage.setKeyboardScrolling(true);
+		}
+	} setInterval(disableScroll,1);
+
+	//DYNAMIC HEADER TEXT
+	//Updates header text given the current section.
+	var sections = [
+		{
+			title: 'Penthouse 901',
+			min: 0,
+			max: 0
+		},{
+			title: 'Penthouse 901',
+			min: 1,
+			max: 3,
+			subs: [
+				{
+					name: 'Terrace',
+					index: 1
+				},{
+					name: 'Great Room',
+					index: 2
+				},{
+					name: 'Kitchen',
+					index: 3
+				}
+			]
+		},{
+			title: 'Floor Plan',
+			min: 4,
+			max: 4
+		},{
+			title: 'Property Features',
+			min: 5,
+			max: 10,
+			subs: [
+				{
+					name: 'Service',
+					index: 6
+				},
+				{
+					name: 'Pool',
+					index: 7
+				},
+				{
+					name: 'Fitness',
+					index: 8
+				},
+				{
+					name: 'Dining',
+					index: 9
+				},
+				{
+					name: 'More',
+					index: 10
+				}
+			]
+		},{
+			title: 'Neighborhood',
+			min: 11,
+			max: 13,
+			subs: [
+				{
+					name: 'Santa Monica Beach',
+					index: 11
+				},
+				{
+					name: 'Santa Monica Place',
+					index: 12
+				},
+				{
+					name: 'Tongva Park',
+					index: 13
+				}
+			]
+		},{
+			title: 'Contact Us',
+			min: 14,
+			max: 14
+		}
+	], $htext = $('#htext');
+
+	function updateHeader() {
+		var $view = $('body').attr('class');
+		$view = $view.replace(/fp-viewing-/,'').replace(/-slide\d+/,'');
+		$view = parseInt($view);
+
+		for(var i = 0; i < sections.length; i++){
+			if ($view >= sections[i].min && $view <= sections[i].max){
+				$htext.text(sections[i].title);
+			}
+		}
+	} setInterval(updateHeader,1);
+
+	//DYNAMIC ACCORDION
+	//Updates accordion links given the current section.
+	function updateAccordion(){
+
+		var $view = $('body').attr('class');
+		$view = $view.replace(/fp-viewing-/,'').replace(/-slide\d+/,'');
+		$view = parseInt($view);
+
+		for(var j = 0; j < sections.length; j++){
+			if ($view >= sections[j].min && $view <= sections[j].max){
+				var $index = sections[j].min;
+				$('#sidenav > ul > li a').removeClass('active');
+				$('.toSect'+($index+1)).addClass('active');
+			}
+			if(typeof sections[j].subs != "undefined"){
+				for(var k = 0; k < sections[j].subs.length; k++){
+					var $subIndex = sections[j].subs[k].index;
+					if($view == $subIndex){
+						$('#sidenav li li a').removeClass('active');
+						$('.toSect'+($subIndex+1)).addClass('active');
+					}
+				}
+			}
+		}
+	} setInterval(updateAccordion,1);
+
+	//AUTO-ROTATE SLIDER
+	//Rotates through slides at fixed pace.
+	function autoRotateSlider() {
+		var $view = $('body').attr('class'),
+			 $sect = $view.replace(/fp-viewing-/,'').replace(/-slide\d+/,''),
+			 $slide = $view.replace(/fp-viewing-\d+-slide/,'');
+		if ($sect == 0) {
+			$.fn.fullpage.moveSlideRight();
+		}
+	} setInterval(autoRotateSlider,7000);
+
+	//REGEX DECLARATIONS
+	var regex = {
+		email: /[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+([.][a-zA-Z]+)+$/,
+		phone: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+	};
+
+	//VALIDATE EMAIL
+	//triggers when user leaves field or provides input;
+	//manages `.valid` and `.invalid` on field;
+	$('#email').on('keydown keyup blur',function(){
+		var $input = $(this).val().trim();
+		if ($input.search(regex.email) === -1) {
+			$(this).addClass('invalid')
+				.removeClass('valid')
+		} else if ($input.search(regex.email) === 0) {
+			$(this).addClass('valid')
+				.removeClass('invalid')
+		}
+	});
+
+	//VALIDATE PHONE
+	//triggers when user leaves field or provides input;
+	//manages `.valid` and `.invalid` on field;
+	$('#phone').on('keydown keyup blur',function(){
+		var $input = $(this).val().trim();
+		if ($input.search(regex.phone) === -1) {
+			$(this).addClass('invalid')
+				.removeClass('valid');
+		} else if ($input.search(regex.phone) === 0) {
+			$(this).addClass('valid')
+				.removeClass('invalid');
+		}
+	});
+
+	//INITIALIZE EMPTIES
+	//checks whether field is empty upon load;
+	$('form .required').each(function(){
+		var $input = $(this).val().trim();
+		if ($input.length === 0) {
+			$(this).addClass('empty');
+		}
+	});
+	//CHECK TOUCHED
+	$('form .field').on('blur', function(){
+		$(this).addClass('touched');
+	});
+
+	//VALIDATE REQUIRED
+	//triggers when user leaves field or provides input;
+	//manages class `.empty` on fields with `.required`;
+	$('form .required').on('keydown keyup blur',function(){
+		var $input = $(this).val().trim();
+		if ($input.length === 0) {
+			$(this).addClass('empty')
+				.removeClass('valid')
+				.removeClass('invalid');
+		} else {
+			$(this).removeClass('empty');
+		}
+	});
+
+	//DISABLE SUBMIT BUTTON
+	//add `disabled` attribute to submit button by default;
+	//removes attribute once no require fields are empty;
+	//and when all fields without `.noval` are `.valid`;
+	$('.submit').attr('disabled','').addClass('disabled');
+	function enableSubmit() {
+		var requireds = false, validates = false;
+		if ($('form .required').length == $('form .required:not(.empty)').length) {
+		 	requireds = true;
+		}
+		if ($('form input:not(.noval,.submit)').length == $('form input:not(.noval,.submit).valid').length) {
+			validates = true;
+		}
+		if ($('.submit').hasClass('disengage')) {
+			$('.submit').attr('disabled','').addClass('disabled');
+		} else if (requireds == true & validates == true) {
+			$('.submit').removeAttr('disabled').removeClass('disabled');
+		} else {
+			$('.submit').attr('disabled','').addClass('disabled');
+		}
+	} setInterval(enableSubmit,1);
+});
