@@ -78,6 +78,25 @@
 				text-align: left;
 			}
 		}
+		footer {
+			background: $brown;
+			padding: 30px 40px 0;
+			.disclaimer {
+				margin: 0 auto 30px;
+				max-width: 70%;
+				p {
+					font-family: $nobel;
+					font-size: .7em;
+					text-align: justify;
+					text-transform: none;
+				}
+			}
+			.sales-agent {
+				font-family: $nobel-light;
+				font-size: .7em;
+				span {font-family:inherit;}
+			}
+		}
 	}
 
 }

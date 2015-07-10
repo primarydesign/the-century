@@ -12,8 +12,8 @@ h1, h2, h3, h4 {
 	padding: 0 !important;
 
 	figcaption, footer {
-		bottom: 15% !important;
-		padding: 30px 10% !important;
+		bottom: 0 !important;
+		// padding: 30px 10% !important;
 		position: absolute;
 		width: 100%;
 		z-index: 10;
@@ -25,5 +25,29 @@ h1, h2, h3, h4 {
 			letter-spacing: 1px;
 			text-align: center;
 		}
+	}
+}
+.sales-agent {
+	background: $brown;
+	text-align: center;
+	span {
+		font-family: inherit;
+		font-size: .9em;
+		font-weight: bold;
+		line-height: 70px;
+	}
+}
+.full-banner {
+	padding: 30px 40px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	background: red;
+	span {
+		display: block;
+		position: absolute;
+		top:50%;left:50%;
+		transform: translate(-50%,-50%);
+		width: 100%;
 	}
 }
