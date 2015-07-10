@@ -63,7 +63,31 @@
 			}
 		}
 	}
-
+	#section16 {//additional highlights
+		h2, li {color: #fff;}
+		h2 {
+			font-family: $nobel;
+			font-size: 2em;
+			font-weight: normal;
+			text-transform: uppercase;
+			margin-top: 40px;
+		}
+		.feature-items {
+			padding-left: 20px;
+			li {
+				list-style-position: outside;
+				font-family: $nobel-light;
+				font-size: 1.2em;
+				font-weight: bold;
+				letter-spacing: .8px;
+				line-height: 1.4em;
+				margin-bottom: 8px;
+				sup {
+					font-size: .5em;
+				}
+			}
+		}
+	}
 	#section19 {
 		position: relative;
 
