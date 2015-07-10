@@ -287,6 +287,8 @@ h1, h2, h3, h4 {
 }
 
 .full-banner {
+  bottom: 0;
+  display: block !important;
   padding: 30px 40px;
   position: absolute;
   text-align: center;
@@ -904,6 +906,9 @@ form#contact .submit {
 #fullpage #section20 {
   background: url("../img/section2+section20_terrace-breathtaking-views-of-la.jpg");
 }
+#fullpage #section1 figcaption {
+  bottom: 20% !important;
+}
 #fullpage #section8 h1, #fullpage #section8 h2, #fullpage #section8 h3, #fullpage #section8 li {
   color: #433F39;
   margin: 0;
@@ -934,7 +939,16 @@ form#contact .submit {
   height: 16px;
   width: 14px;
   margin-right: 5px;
-  background: url("../img/print-icon.svg");
+  background: url("../img/print-icon.svg") no-repeat;
+  background-size: contain;
+}
+#fullpage #section8 .pdf li a {
+  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: #5A5854;
 }
 #fullpage #section8 h2 {
   font-size: 1.2em;
@@ -1041,6 +1055,9 @@ form#contact .submit {
 #fullpage #section19 {
   position: relative;
 }
+#fullpage #section19 figcaption {
+  bottom: 180px !important;
+}
 #fullpage #section19 footer {
   padding: 0 !important;
   position: absolute;
@@ -1084,11 +1101,11 @@ form#contact .submit {
 #fullpage #section20 {
   padding-top: 90px !important;
 }
-#fullpage #section20 h2, #fullpage #section20 form, #fullpage #section20 footer {
+#fullpage #section20 h2, #fullpage #section20 form {
   position: static;
 }
 #fullpage #section20 .contact-wrap {
-  margin: 0 auto 30px;
+  margin: 30px auto 90px;
   max-width: 700px;
 }
 #fullpage #section20 .contact-wrap h2 {
@@ -1099,24 +1116,33 @@ form#contact .submit {
 }
 #fullpage #section20 footer {
   background: #5A5854;
-  padding: 30px 40px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 0 20px !important;
 }
-#fullpage #section20 footer .disclaimer {
-  margin: 0 auto 30px;
-  max-width: 70%;
+#fullpage #section20 footer, #fullpage #section20 footer * {
+  padding: 0;
+  margin: 0;
 }
-#fullpage #section20 footer .disclaimer p {
-  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+#fullpage #section20 footer * {
+  margin: 10px 0;
+}
+#fullpage #section20 footer .logo {
+  margin: 0;
+  vertical-align: bottom;
+}
+#fullpage #section20 footer .sales {
+  font-size: .5em;
+}
+#fullpage #section20 footer .disclaimer-open {
   font-size: .7em;
-  text-align: justify;
-  text-transform: none;
 }
-#fullpage #section20 footer .sales-agent {
-  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: .7em;
-}
-#fullpage #section20 footer .sales-agent span {
-  font-family: inherit;
+
+#disclaimer {
+  display: none;
 }
 
 #dynamic-header {

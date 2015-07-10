@@ -22,6 +22,12 @@
 	#section19 {background: url('../img/section19_nearby-golf-courses-and-country-clubs.jpg');}
 	#section20 {background: url('../img/section2+section20_terrace-breathtaking-views-of-la.jpg');}
 
+	#section1 {
+		figcaption {
+			bottom: 20% !important;
+		}
+	}
+
 	#section8 { //floorplan-information
 		h1, h2, h3, li {color: $blackish;margin: 0;padding: 0;}
 		h2, h3, .feature-items li {margin-bottom: 10px;}
@@ -45,7 +51,16 @@
 					height: 16px;width:14px;
 					//position: absolute;
 					margin-right: 5px;
-					background: url('../img/print-icon.svg');
+					background: url('../img/print-icon.svg') no-repeat;
+					background-size: contain;
+				}
+				a {
+					font-family: $nobel-light;
+					font-size: 1em;
+					text-transform: uppercase;
+					font-weight: bold;
+					text-decoration: none;
+					color: $brown;
 				}
 			}
 		}
@@ -70,6 +85,7 @@
 			}
 		}
 	}
+
 	#section9 {//floorplan image
 		.inner-wrap {
 			padding-left:0;
@@ -167,6 +183,10 @@
 	#section19 {
 		position: relative;
 
+		figcaption {
+			bottom: 180px !important;
+		}
+
 		footer {
 			padding: 0 !important;
 			position: absolute;
@@ -209,10 +229,11 @@
 
 	#section20 {
 		padding-top: 90px !important;
-		h2,form, footer {position:static;}
+		//padding-bottom: 90px !important;
+		h2,form {position:static;}
 
 		.contact-wrap {
-			margin: 0 auto 30px;
+			margin: 30px auto 90px;
 			max-width: 700px;
 			h2 {
 				color: $brown;
@@ -223,23 +244,31 @@
 		}
 		footer {
 			background: $brown;
-			padding: 30px 40px 0;
-			.disclaimer {
-				margin: 0 auto 30px;
-				max-width: 70%;
-				p {
-					font-family: $nobel;
-					font-size: .7em;
-					text-align: justify;
-					text-transform: none;
-				}
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			align-items: center;
+			align-content: center;
+			&, * {padding:0;margin:0;}
+			padding: 0 20px !important;
+			* {margin: 10px 0;}
+			.logo {
+				margin:0;
+				vertical-align: bottom;
 			}
-			.sales-agent {
-				font-family: $nobel-light;
+			.sales {
+				font-size: .5em;
+
+			}
+			.disclaimer-open {
 				font-size: .7em;
-				span {font-family:inherit;}
 			}
+
 		}
 	}
 
+}
+
+#disclaimer {
+	display: none;
 }
