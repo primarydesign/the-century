@@ -39,6 +39,7 @@
 	}
 
 	//TEMPORARY
-	.sub-items {display:none;}
+	.sub-items {display: none;}
+	li.active .sub-items {display: block;}
 
 }//namespace

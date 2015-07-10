@@ -1,23 +1,61 @@
 $(document).ready(function() {
+	$('#fullpage').fullpage({
+		fitToSection: true,
+		fixedElements: '#dynamic-header',
+		loopHorizontal: true,
+		scrollOverflow: true,
+		slidesNavigation: true,
+		verticalCentered: false,
+		afterLoad: function(anchorLink, index){
+			updateHeader(index);
+			updateAccordion(index);
+       }
+	});
 
 	$('[class^="ns-sect"]').click(function(){
 		var $to = $(this).attr('class');
 		$to = $to.replace('ns-sect-','');
-		$to = parseInt($to) + 1;
+		$to = parseInt($to);
 		$.fn.fullpage.moveTo($to);
 	});
 
-	var Sections = [
+	function updateHeader(index) {
+		$index = index - 1;
+		for(var i = 0; i < sections.length; i++){
+			if ($index >= sections[i].min && $index <= sections[i].max){
+				$('#dynamic-header h2').text(sections[i].title + "/ " + index);
+			}
+		}
+	}
+	function updateAccordion(index) {
+		for(var m = 0; m < sections.length; m++){
+			if (index >= sections[m].min && index <= sections[m].max){
+				var $mainIndex = sections[m].min;
+				$('.main-items > li').removeClass('active');
+				$('.ns-sect-'+($mainIndex)).parent().addClass('active');
+			}
+			if(typeof sections[m].subs != "undefined"){
+				for(var s = 0; s < sections[m].subs.length; s++){
+					var $subIndex = sections[m].subs[s].index;
+					if(index == $subIndex){
+						$('.sub-items > li').removeClass('active');
+						$('.ns-sect-'+($subIndex)).parent('.sub-items li').addClass('active');
+					}
+				}
+			}
+		}
+	}
+	var sections = [
 		{
 			title: 'Penthouse 40',
-			index: 0
+			min: 1,
+			max: 1
 		},
 		{
 			title: 'Penthouse 40',
+			min: 2,
+			max: 7,
 			subs: [
-				{
-					index: 1
-				},
 				{
 					index: 2
 				},
@@ -32,22 +70,22 @@ $(document).ready(function() {
 				},
 				{
 					index: 6
+				},
+				{
+					index: 7
 				}
 			]
 		},
 		{
 			title: 'Floor Plan',
-			min: 7,
-			max: 8
+			min: 8,
+			max: 9
 		},
 		{
 			title: 'Property Features',
-			min: 9,
-			max: 15,
+			min: 10,
+			max: 16,
 			subs: [
-				{
-					index: 10
-				},
 				{
 					index: 11
 				},
@@ -62,30 +100,32 @@ $(document).ready(function() {
 				},
 				{
 					index: 15
+				},
+				{
+					index: 16
 				}
 			]
 		},
 		{
 			title: 'Neighborhood',
-			min: 16,
-			max: 18,
+			min: 17,
+			max: 19,
 			subs: [
-				{
-					index: 16
-				},
 				{
 					index: 17
 				},
 				{
 					index: 18
+				},
+				{
+					index: 19
 				}
 			]
 		},
 		{
 			title: 'Contact',
-			min: 19,
-			max: 19
+			min: 20,
+			max: 20
 		}
 	];
-
 });
