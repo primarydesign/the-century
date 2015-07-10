@@ -847,78 +847,78 @@ form#contact .submit {
 #fullpage #slide3 {
   background: url("../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg");
 }
-#fullpage #section2 {
+#fullpage #section1 {
   background: url("../img/section2+section20_terrace-breathtaking-views-of-la.jpg");
 }
-#fullpage #section3 {
+#fullpage #section2 {
   background: url("../img/section3_expansive-great-room-dramatic-views-terrace-and-two-fireplaces.jpg");
 }
-#fullpage #section4 {
+#fullpage #section3 {
   background: url("../img/section4_chefs-kitchen-with-terrace-and-exceptional-appliances.jpg");
 }
-#fullpage #section5 {
+#fullpage #section4 {
   background: url("../img/section5_stunning-formal-dining-room.jpg");
 }
-#fullpage #section6 {
+#fullpage #section5 {
   background: url("../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg");
 }
-#fullpage #section7 {
+#fullpage #section6 {
   background: url("../img/section7_full-bathrooms-his-her-master-baths.jpg");
 }
-#fullpage #section10 {
+#fullpage #section9 {
   background: url("../img/section10_exterior-with-acres-of-lush-gardens.jpg");
 }
-#fullpage #section11 {
+#fullpage #section10 {
   background: url("../img/section11+slide2_lobby-with-doorman-and-concierge.jpg");
 }
-#fullpage #section12 {
+#fullpage #section11 {
   background: url("../img/section12_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg");
 }
-#fullpage #section13 {
+#fullpage #section12 {
   background: url("../img/section13_fitness-center-with-yoga-pilates-studio.jpg");
 }
-#fullpage #section14 {
+#fullpage #section13 {
   background: url("../img/section14_plush-multimedia-screening-room-lounge.jpg");
 }
-#fullpage #section15 {
+#fullpage #section14 {
   background: url("../img/section15_on-site-restaurant-hinoki-and-the-bird-from-chef-david-meyers.jpg");
 }
-#fullpage #section16 {
+#fullpage #section15 {
   background: url("../img/section16_outdoor-lounge-and-firepit.jpg");
 }
-#fullpage #section17 {
+#fullpage #section16 {
   background: url("../img/section17_botique-shopping-destination-rodeo-drive.jpg");
 }
-#fullpage #section18 {
+#fullpage #section17 {
   background: url("../img/section18_getty-museum-featuring-art-photography-architecture-and-gardens.jpg");
 }
-#fullpage #section19 {
+#fullpage #section18 {
   background: url("../img/section19_nearby-golf-courses-and-country-clubs.jpg");
 }
-#fullpage #section20 {
+#fullpage #section19 {
   background: url("../img/section2+section20_terrace-breathtaking-views-of-la.jpg");
 }
-#fullpage #section19 {
+#fullpage #section18 {
   position: relative;
 }
-#fullpage #section19 footer {
+#fullpage #section18 footer {
   padding: 0 !important;
   position: absolute;
   bottom: 0 !important;
 }
-#fullpage #section19 footer, #fullpage #section19 footer * {
+#fullpage #section18 footer, #fullpage #section18 footer * {
   margin: 0;
   padding: 0;
 }
-#fullpage #section19 footer div {
+#fullpage #section18 footer div {
   height: 70px;
   width: 100%;
 }
-#fullpage #section19 footer .cta-button {
+#fullpage #section18 footer .cta-button {
   background: #B39153;
   position: relative;
 }
-#fullpage #section19 footer .cta-button button {
+#fullpage #section18 footer .cta-button button {
   color: #5A5854;
   background: #fff;
   border-radius: 2px;
@@ -931,51 +931,51 @@ form#contact .submit {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#fullpage #section19 footer .sales-agent {
+#fullpage #section18 footer .sales-agent {
   background: #5A5854;
   text-align: center;
 }
-#fullpage #section19 footer .sales-agent span {
+#fullpage #section18 footer .sales-agent span {
   font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .9em;
   font-weight: bold;
   line-height: 70px;
 }
-#fullpage #section20 {
+#fullpage #section19 {
   padding-top: 90px !important;
 }
-#fullpage #section20 h2, #fullpage #section20 form, #fullpage #section20 footer {
+#fullpage #section19 h2, #fullpage #section19 form, #fullpage #section19 footer {
   position: static;
 }
-#fullpage #section20 .contact-wrap {
+#fullpage #section19 .contact-wrap {
   margin: 0 auto 30px;
   max-width: 700px;
 }
-#fullpage #section20 .contact-wrap h2 {
+#fullpage #section19 .contact-wrap h2 {
   color: #5A5854;
   margin: 0;
   padding: 30px 0 10px 30px;
   text-align: left;
 }
-#fullpage #section20 footer {
+#fullpage #section19 footer {
   background: #5A5854;
   padding: 30px 40px 0;
 }
-#fullpage #section20 footer .disclaimer {
+#fullpage #section19 footer .disclaimer {
   margin: 0 auto 30px;
   max-width: 70%;
 }
-#fullpage #section20 footer .disclaimer p {
+#fullpage #section19 footer .disclaimer p {
   font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .7em;
   text-align: justify;
   text-transform: none;
 }
-#fullpage #section20 footer .sales-agent {
+#fullpage #section19 footer .sales-agent {
   font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .7em;
 }
-#fullpage #section20 footer .sales-agent span {
+#fullpage #section19 footer .sales-agent span {
   font-family: inherit;
 }
 
