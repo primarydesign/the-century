@@ -36,9 +36,11 @@ button, input, textarea {border-radius: 2px !important;}
 	span, p {
 		color: #fff;
 		font-family: $nobel;
-		font-size: 1.3em;
+		font-size: 1em;
 		letter-spacing: 1px;
 		text-align: center;
+		margin: 0 auto;
+		max-width: 1000px;
 	}
 }
 .banner-container {
