@@ -30,7 +30,7 @@
 	}
 
 /* INDIVIDUAL SECTION STYLINGS */
-	
+
 	#section1 {
 		figcaption {
 			bottom: 20% !important;
@@ -171,22 +171,22 @@
 				}
 			}
 		}
-		footer {
-			bottom:0;
-			height: 70px;width: 100%;
-			margin:0;padding:0;
-			padding: 30px 40px;
-			position: absolute;
-			text-align: center;
-			background: $brown;
-			span {
-				height: 100%;
-				font-family: $nobel-light;
-				font-size: 1.1em;
-				font-weight: normal;
-				text-align: center;
-			}
-		}
+		// footer {
+		// 	bottom:0;
+		// 	height: 70px;width: 100%;
+		// 	margin:0;padding:0;
+		// 	padding: 30px 40px;
+		// 	position: absolute;
+		// 	text-align: center;
+		// 	background: $brown;
+		// 	span {
+		// 		height: 100%;
+		// 		font-family: $nobel-light;
+		// 		font-size: 1.1em;
+		// 		font-weight: normal;
+		// 		text-align: center;
+		// 	}
+		// }
 	}
 
 	#section19 {
@@ -195,44 +195,57 @@
 		figcaption {
 			bottom: 180px !important;
 		}
-
-		footer {
-			padding: 0 !important;
-			position: absolute;
-			bottom:0 !important;
-			&, * {margin:0;padding: 0;}
-			div {
-				height: 70px;
-				width: 100%;
-			}
+		.banner-container {
 			.cta-button {
 				background: $bronze;
-				position: relative;
+				text-align: center;
 				button {
-					color: $brown;
 					background: #fff;
-					border-radius: 2px;
+					color: $brown;
 					font-family: $nobel;
-					font-size: .9em;
+					font-size: 1em;
 					font-weight: bold;
 					padding:10px 25px;
-					position: absolute;
-					top:50%;left:50%;
-					transform: translate(-50%, -50%);
 				}
 			}
-			.sales-agent {
-				background: $brown;
-				text-align: center;
-				span {
-					font-family: $nobel-light;
-					font-size: .9em;
-					font-weight: bold;
-					line-height: 70px;
-				}
-			}
-
 		}
+		// footer {
+		// 	padding: 0 !important;
+		// 	position: absolute;
+		// 	bottom:0 !important;
+		// 	&, * {margin:0;padding: 0;}
+		// 	div {
+		// 		height: 70px;
+		// 		width: 100%;
+		// 	}
+		// 	.cta-button {
+		// 		background: $bronze;
+		// 		position: relative;
+		// 		button {
+		// 			color: $brown;
+		// 			background: #fff;
+		// 			border-radius: 2px;
+		// 			font-family: $nobel;
+		// 			font-size: .9em;
+		// 			font-weight: bold;
+		// 			padding:10px 25px;
+		// 			position: absolute;
+		// 			top:50%;left:50%;
+		// 			transform: translate(-50%, -50%);
+		// 		}
+		// 	}
+		// 	.sales-agent {
+		// 		background: $brown;
+		// 		text-align: center;
+		// 		span {
+		// 			font-family: $nobel-light;
+		// 			font-size: .9em;
+		// 			font-weight: bold;
+		// 			line-height: 70px;
+		// 		}
+		// 	}
+		//
+		// }
 
 	}
 

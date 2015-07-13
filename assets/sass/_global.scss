@@ -8,35 +8,21 @@ button, input[type="submit"], a {
 h1, h2, h3, h4 {
 	letter-spacing: 2px;
 }
+button {margin:0 !important;}
+button, input, textarea {border-radius: 2px !important;}
 .section {
 	padding: 0 !important;
-
-	figcaption, footer {
-		bottom: 0 !important;
-		// padding: 30px 10% !important;
-		position: absolute;
-		width: 100%;
-		z-index: 10;
-		background:rgba(0,0,0,0.5);
-		span, h1, p, {
-			color: #fff;
-			font-family: $nobel;
-			font-size: 1.3em;
-			letter-spacing: 1px;
-			text-align: center;
-		}
-	}
 }
-.sales-agent {
-	background: $brown;
-	text-align: center;
-	span {
-		font-family: inherit;
-		font-size: .9em;
-		font-weight: bold;
-		line-height: 70px;
-	}
-}
+// .sales-agent {
+// 	background: $brown;
+// 	text-align: center;
+// 	span {
+// 		font-family: inherit;
+// 		font-size: .9em;
+// 		font-weight: bold;
+// 		line-height: 70px;
+// 	}
+// }
 .full-banner {
 	bottom: 0;
 	display: block !important;
@@ -55,6 +41,43 @@ h1, h2, h3, h4 {
 .inner-wrap {
 	height: 100%;width: 100%;
 	padding-top: 90px;
-	padding-left: 245px; //205
-	//background: red;
+	padding-left: 245px;
 }
+.caption {
+	bottom:0;left:0;
+	padding: 20px 30px;
+	position: absolute;
+	width:100%;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+	span, p {
+		color: #fff;
+		font-family: $nobel;
+		font-size: 1.3em;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+}
+.banner-container {
+	bottom:0;left:0;
+	margin:0;padding:0;
+	position: absolute;
+	width: 100%;
+	.banner {
+		display: block;
+		padding: 10px 20px;
+		width: 100%;
+		text-align: center;
+		&.sales-agent {
+			background: $brown;
+			font-family: $nobel-light;
+			font-size: 1em;
+			padding: 10px 10px;
+			@media (min-width: 500px) {
+				br {display:none;}
+			}
+		}
+	}
+}
+
+#sidebar-wrap {display: none;}

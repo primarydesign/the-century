@@ -257,33 +257,16 @@ h1, h2, h3, h4 {
   letter-spacing: 2px;
 }
 
-.section {
-  padding: 0 !important;
-}
-.section figcaption, .section footer {
-  bottom: 0 !important;
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.5);
-}
-.section figcaption span, .section figcaption h1, .section figcaption p, .section footer span, .section footer h1, .section footer p {
-  color: #fff;
-  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.3em;
-  letter-spacing: 1px;
-  text-align: center;
+button {
+  margin: 0 !important;
 }
 
-.sales-agent {
-  background: #5A5854;
-  text-align: center;
+button, input, textarea {
+  border-radius: 2px !important;
 }
-.sales-agent span {
-  font-family: inherit;
-  font-size: .9em;
-  font-weight: bold;
-  line-height: 70px;
+
+.section {
+  padding: 0 !important;
 }
 
 .full-banner {
@@ -308,6 +291,53 @@ h1, h2, h3, h4 {
   width: 100%;
   padding-top: 90px;
   padding-left: 245px;
+}
+
+.caption {
+  bottom: 0;
+  left: 0;
+  padding: 20px 30px;
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.caption span, .caption p {
+  color: #fff;
+  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.banner-container {
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+.banner-container .banner {
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+}
+.banner-container .banner.sales-agent {
+  background: #5A5854;
+  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding: 10px 10px;
+}
+@media (min-width: 500px) {
+  .banner-container .banner.sales-agent br {
+    display: none;
+  }
+}
+
+#sidebar-wrap {
+  display: none;
 }
 
 /* CSS Document */
@@ -1040,69 +1070,23 @@ form#contact .submit {
 #fullpage #section16 .feature-items li sup {
   font-size: .5em;
 }
-#fullpage #section16 footer {
-  bottom: 0;
-  height: 70px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  padding: 30px 40px;
-  position: absolute;
-  text-align: center;
-  background: #5A5854;
-}
-#fullpage #section16 footer span {
-  height: 100%;
-  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: normal;
-  text-align: center;
-}
 #fullpage #section19 {
   position: relative;
 }
 #fullpage #section19 figcaption {
   bottom: 180px !important;
 }
-#fullpage #section19 footer {
-  padding: 0 !important;
-  position: absolute;
-  bottom: 0 !important;
-}
-#fullpage #section19 footer, #fullpage #section19 footer * {
-  margin: 0;
-  padding: 0;
-}
-#fullpage #section19 footer div {
-  height: 70px;
-  width: 100%;
-}
-#fullpage #section19 footer .cta-button {
+#fullpage #section19 .banner-container .cta-button {
   background: #B39153;
-  position: relative;
-}
-#fullpage #section19 footer .cta-button button {
-  color: #5A5854;
-  background: #fff;
-  border-radius: 2px;
-  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: .9em;
-  font-weight: bold;
-  padding: 10px 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#fullpage #section19 footer .sales-agent {
-  background: #5A5854;
   text-align: center;
 }
-#fullpage #section19 footer .sales-agent span {
-  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: .9em;
+#fullpage #section19 .banner-container .cta-button button {
+  background: #fff;
+  color: #5A5854;
+  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
   font-weight: bold;
-  line-height: 70px;
+  padding: 10px 25px;
 }
 #fullpage #section20 {
   padding-top: 90px !important;
@@ -1201,14 +1185,14 @@ form#contact .submit {
   left: 25px;
   width: 180px;
 }
-#sidebar-wrap .banner {
+#sidebar-wrap .brand {
   width: 100%;
   height: 120px;
   box-sizing: border-box;
   padding: 15px 10px;
   background: #fff;
 }
-#sidebar-wrap .banner img {
+#sidebar-wrap .brand img {
   height: 100%;
   width: 100%;
 }
