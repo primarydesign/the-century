@@ -20,7 +20,7 @@ $(document).ready(function() {
 	});
 
 	function updateHeader(index) {
-		$index = index - 1;
+		$index = index;
 		for(var i = 0; i < sections.length; i++){
 			if ($index >= sections[i].min && $index <= sections[i].max){
 				$('#dynamic-header h2').text(sections[i].title);
