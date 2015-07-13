@@ -6,9 +6,9 @@ $(document).ready(function() {
 		scrollOverflow: true,
 		slidesNavigation: true,
 		verticalCentered: false,
-		afterLoad: function(anchorLink, index){
-			updateHeader(index);
-			updateAccordion(index);
+		onLeave: function(index, nextIndex, direction){
+			updateHeader(nextIndex);
+			updateAccordion(nextIndex);
        }
 	});
 
