@@ -13,8 +13,17 @@ button, input, textarea {border-radius: 2px !important;}
 
 .inner-wrap {
 	height: 100%;width: 100%;
-	padding-top: 90px;
-	padding-left: 245px;
+	padding: 0;
+	text-align: center;
+	.inner-box {
+		display: inline-block;
+		margin: 0 auto;
+		padding: 20px 30px 0;
+		text-align: left;
+	}
+	@media (min-width:1100px) {
+		padding-left: 245px;
+	}
 }
 .caption {
 	bottom:0;left:0;
