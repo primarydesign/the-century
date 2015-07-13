@@ -3,8 +3,15 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync').create(),
 	argv = require('yargs').argv;
 
-var p = !!(argv.production), o = !!(argv.open),
-	build = './builds/' + (p ? 'production/' : 'development/');
+var p = !!(argv.production), o = !!(argv.open), b = argv.b,
+	index = 'penthouse' + b + '.html', indexChannel = 'penthouse' + b,
+	build = './builds/' + indexChannel + "/" + (p ? 'production/' : 'development/');
+
+
+gulp.task('test', function(){
+	console.log(index+'\n'+indexChannel+'\n'+build);
+});
+
 
 //compile SASS with Compass
 gulp.task('compass', function(){
@@ -53,7 +60,7 @@ gulp.task('watch', function(){
 	gulp.watch('./assets/css/**/*.css', ['style']);
 	gulp.watch('./assets/sass/**/*.scss', ['style']);
 	gulp.watch('./assets/js/**/*.js', ['script']);
-	gulp.watch('./**/*.html', ['html']);
+	gulp.watch('./**/*.html', ['index']);
 });
 
 //minify HTML
@@ -62,6 +69,13 @@ gulp.task('html', function(){
 		.pipe($.htmlmin())
 		.pipe(gulp.dest(build))
 		.pipe(browserSync.stream());
+});
+gulp.task('index', function(){
+	return gulp.src(index)
+		.pipe($.htmlmin())
+		.pipe($.rename('index.html'))
+		.pipe(gulp.dest(build))
+		.pipe(browserSync.stream())
 });
 
 //compress JPG/PNG/GIF/SVG images
@@ -74,4 +88,4 @@ gulp.task('image', function(){
 })
 
 //reconstruct build environment
-gulp.task('build', ['style','script','html','image']);
+gulp.task('build', ['style','script','index','image']);

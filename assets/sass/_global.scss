@@ -27,7 +27,7 @@ button, input, textarea {border-radius: 2px !important;}
 	}
 }
 .caption {
-	bottom:0;left:0;
+	bottom:20px;left:0;
 	padding: 20px 30px;
 	position: absolute;
 	width:100%;
@@ -36,9 +36,11 @@ button, input, textarea {border-radius: 2px !important;}
 	span, p {
 		color: #fff;
 		font-family: $nobel;
-		font-size: 1.3em;
+		font-size: 1em;
 		letter-spacing: 1px;
 		text-align: center;
+		margin: 0 auto;
+		max-width: 1000px;
 	}
 }
 .banner-container {
@@ -48,7 +50,7 @@ button, input, textarea {border-radius: 2px !important;}
 	width: 100%;
 	.banner {
 		display: block;
-		padding: 10px 20px;
+		padding: 15px 20px !important;
 		width: 100%;
 		text-align: center;
 		&.sales-agent {

@@ -1,7 +1,9 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
+		autoScrolling: true,
 		fitToSection: true,
 		fixedElements: '#dynamic-header',
+		keyboardScrolling: true,
 		loopHorizontal: true,
 		scrollOverflow: true,
 		slidesNavigation: true,
@@ -9,7 +11,13 @@ $(document).ready(function() {
 		onLeave: function(index, nextIndex, direction){
 			updateHeader(nextIndex);
 			updateAccordion(nextIndex);
-       }
+		},
+		afterRender: function(){
+			updateCaptionPosition();
+		},
+		afterResize: function(){
+			updateCaptionPosition();
+		}
 	});
 
 	$('[class^="ns-sect"]').click(function(){
@@ -19,6 +27,12 @@ $(document).ready(function() {
 		$.fn.fullpage.moveTo($to);
 	});
 
+	function updateCaptionPosition() {
+		$('.banner-container').each(function(){
+			var bottom = $(this).height() + 20;
+			$(this).siblings('.caption').css('bottom', bottom);
+		});
+	}
 	function updateHeader(index) {
 		$index = index;
 		for(var i = 0; i < sections.length; i++){
@@ -45,14 +59,15 @@ $(document).ready(function() {
 			}
 		}
 	}
-	var sections = [
+	var penthouse = 'Penthouse ' + $('body').attr('class').match(/penthouse(\d*\w?)/)[1].toUpperCase(),
+		sections = [
 		{
-			title: 'Penthouse 40',
+			title: penthouse,
 			min: 1,
 			max: 1
 		},
 		{
-			title: 'Penthouse 40',
+			title: penthouse,
 			min: 2,
 			max: 7,
 			subs: [

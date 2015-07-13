@@ -285,7 +285,7 @@ button, input, textarea {
 }
 
 .caption {
-  bottom: 0;
+  bottom: 20px;
   left: 0;
   padding: 20px 30px;
   position: absolute;
@@ -296,9 +296,11 @@ button, input, textarea {
 .caption span, .caption p {
   color: #fff;
   font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.3em;
+  font-size: 1em;
   letter-spacing: 1px;
   text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .banner-container {
@@ -311,7 +313,7 @@ button, input, textarea {
 }
 .banner-container .banner {
   display: block;
-  padding: 10px 20px;
+  padding: 15px 20px !important;
   width: 100%;
   text-align: center;
 }
@@ -860,45 +862,80 @@ form#contact .submit {
   letter-spacing: 3px;
 }
 
+.penthouse37a #slide1 {
+  background-image: url("../img/37a_slide1_great-room-at-night-featuring-two-terraces.jpg");
+}
+.penthouse37a #slide2 {
+  background-image: url("../img/37a_section11+slide2_lobby-with-doorman-and-concierge.jpg");
+}
+.penthouse37a #slide3 {
+  background-image: url("../img/37a_section12+slide3_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg");
+}
+.penthouse37a #section2 {
+  background-image: url("../img/37a_section2_great-room-with-panoramic-views.jpg");
+}
+.penthouse37a #section3 {
+  background-image: url("../img/37a_section3_chefs-eat-in-kitchen-with-high-end-appliances.jpg");
+}
+.penthouse37a #section4 {
+  background-image: url("../img/section4_chefs-kitchen-with-terrace-and-exceptional-appliances.jpg");
+}
+.penthouse37a #section5 {
+  background-image: url("../img/37a_section5_master-bedroom-featuring-library-fireplace-terrace-and-midnight-kitchen.jpg");
+}
+.penthouse37a #section6 {
+  background-image: url("../img/37a_section6_spa-bath-separate-shower-his-and-her-dressing-areas.jpg");
+}
+.penthouse37a #section7 {
+  background-image: url("../img/37a_section7_en-suite-den-with-views-of-la.jpg");
+}
+.penthouse37a #section11 {
+  background-image: url("../img/37a_section11+slide2_lobby-with-doorman-and-concierge.jpg");
+}
+.penthouse37a #section12 {
+  background-image: url("../img/37a_section12+slide3_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg");
+}
+
+.penthouse40 #slide1 {
+  background-image: url("../img/section1+slide1_living-room-with-a-view-of-los-angeles.jpg");
+}
+.penthouse40 #slide2 {
+  background-image: url("../img/section11+slide2_lobby-with-doorman-and-concierge.jpg");
+}
+.penthouse40 #slide3 {
+  background-image: url("../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg");
+}
+.penthouse40 #section2 {
+  background-image: url("../img/section2+section20_terrace-breathtaking-views-of-la.jpg");
+}
+.penthouse40 #section3 {
+  background-image: url("../img/section3_expansive-great-room-dramatic-views-terrace-and-two-fireplaces.jpg");
+}
+.penthouse40 #section4 {
+  background-image: url("../img/section4_chefs-kitchen-with-terrace-and-exceptional-appliances.jpg");
+}
+.penthouse40 #section5 {
+  background-image: url("../img/section5_stunning-formal-dining-room.jpg");
+}
+.penthouse40 #section6 {
+  background-image: url("../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg");
+}
+.penthouse40 #section7 {
+  background-image: url("../img/section7_full-bathrooms-his-her-master-baths.jpg");
+}
+.penthouse40 #section11 {
+  background-image: url("../img/section11+slide2_lobby-with-doorman-and-concierge.jpg");
+}
+.penthouse40 #section12 {
+  background-image: url("../img/section12_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg");
+}
+
 #fullpage {
   /* BACKGROUNDS (SKIP SECTIONS 8-9) */
   /* INDIVIDUAL SECTION STYLINGS */
 }
-#fullpage #slide1 {
-  background-image: url("../img/section1+slide1_living-room-with-a-view-of-los-angeles.jpg");
-}
-#fullpage #slide2 {
-  background-image: url("../img/section11+slide2_lobby-with-doorman-and-concierge.jpg");
-}
-#fullpage #slide3 {
-  background-image: url("../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg");
-}
-#fullpage #section2 {
-  background-image: url("../img/section2+section20_terrace-breathtaking-views-of-la.jpg");
-}
-#fullpage #section3 {
-  background-image: url("../img/section3_expansive-great-room-dramatic-views-terrace-and-two-fireplaces.jpg");
-}
-#fullpage #section4 {
-  background-image: url("../img/section4_chefs-kitchen-with-terrace-and-exceptional-appliances.jpg");
-}
-#fullpage #section5 {
-  background-image: url("../img/section5_stunning-formal-dining-room.jpg");
-}
-#fullpage #section6 {
-  background-image: url("../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg");
-}
-#fullpage #section7 {
-  background-image: url("../img/section7_full-bathrooms-his-her-master-baths.jpg");
-}
 #fullpage #section10 {
   background-image: url("../img/section10_exterior-with-acres-of-lush-gardens.jpg");
-}
-#fullpage #section11 {
-  background-image: url("../img/section11+slide2_lobby-with-doorman-and-concierge.jpg");
-}
-#fullpage #section12 {
-  background-image: url("../img/section12_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg");
 }
 #fullpage #section13 {
   background-image: url("../img/section13_fitness-center-with-yoga-pilates-studio.jpg");
@@ -1049,10 +1086,6 @@ form#contact .submit {
   height: 100px;
   margin: 0 auto 20px;
 }
-#fullpage #section15 figcaption p {
-  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-}
 #fullpage #section16 h2, #fullpage #section16 li {
   color: #fff;
 }
@@ -1079,7 +1112,7 @@ form#contact .submit {
   font-size: .5em;
 }
 #fullpage #section19 .caption {
-  bottom: 100px !important;
+  bottom: 100px;
 }
 #fullpage #section19 .banner-container .cta-button {
   background: #B39153;
@@ -1155,9 +1188,9 @@ form#contact .submit {
   line-height: 50px !important;
   padding: 0 !important;
   text-align: center;
-  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.3em !important;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 4px;
 }
 #dynamic-header .btn-wrapper {
