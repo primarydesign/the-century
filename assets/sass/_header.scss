@@ -1,7 +1,7 @@
 #dynamic-header { //namespace
-	height: 60px;width: 100%;
+	height: 50px;width: 100%;
 	box-sizing: content-box;
-	padding: 10px 0;
+	//padding: 10px 0;
 	position: fixed;
 	top: 0;
 	z-index: 50;
@@ -10,16 +10,17 @@
 	text-align: center;
 
 	h2 {
-		line-height: 60px !important;
+		line-height: 50px !important;
 		padding: 0 !important;
 		text-align: center;
 		font-family: $nobel-light;
-		font-size: 1.7em !important;
+		font-size: 1.5em !important;
 		font-weight: 100;
 		letter-spacing: 4px;
 	}
 
 	.btn-wrapper {
+		display: none !important;
 		height: 100%;width:200px;
 		position: absolute;
 		top:0;right:0;
@@ -37,6 +38,13 @@
 			background: #fff;
 			color: $bronze;
 		}
+	}
+	@media (min-width: 650px) {
+		height: 60px;
+		h2 {line-height: 60px !important;
+			font-size: 1.7em !important;
+		}
+		.btn-wrapper {display: flex !important;}
 	}
 
 }//namespace

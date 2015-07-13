@@ -1136,10 +1136,9 @@ form#contact .submit {
 }
 
 #dynamic-header {
-  height: 60px;
+  height: 50px;
   width: 100%;
   box-sizing: content-box;
-  padding: 10px 0;
   position: fixed;
   top: 0;
   z-index: 50;
@@ -1148,15 +1147,16 @@ form#contact .submit {
   text-align: center;
 }
 #dynamic-header h2 {
-  line-height: 60px !important;
+  line-height: 50px !important;
   padding: 0 !important;
   text-align: center;
   font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.7em !important;
+  font-size: 1.5em !important;
   font-weight: 100;
   letter-spacing: 4px;
 }
 #dynamic-header .btn-wrapper {
+  display: none !important;
   height: 100%;
   width: 200px;
   position: absolute;
@@ -1177,6 +1177,18 @@ form#contact .submit {
   font-weight: bold;
   background: #fff;
   color: #B39153;
+}
+@media (min-width: 650px) {
+  #dynamic-header {
+    height: 60px;
+  }
+  #dynamic-header h2 {
+    line-height: 60px !important;
+    font-size: 1.7em !important;
+  }
+  #dynamic-header .btn-wrapper {
+    display: flex !important;
+  }
 }
 
 #sidebar-wrap {
