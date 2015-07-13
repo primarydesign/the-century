@@ -18,15 +18,12 @@ button, input, textarea {border-radius: 2px !important;}
 	.inner-box {
 		display: inline-block;
 		margin: 0 auto;
+		max-width: 800px;
 		padding: 20px 30px 0;
 		text-align: left;
 	}
 	@media (min-width:1100px) {
 		padding-left: 245px;
-		text-align: left;
-		.inner-box {
-			margin: 0;
-		}
 	}
 }
 .caption {

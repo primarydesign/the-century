@@ -15,7 +15,10 @@
 /* section & slides */
 .section, .slide {
 	margin: 0;padding:0;
-	padding-top: 70px; //header
+	padding-top: 60px; //header
+	@media (min-width: 650px) {
+		padding-top: 70px;
+	}
 }
 
 /* slider navigation */
