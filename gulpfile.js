@@ -73,8 +73,9 @@ gulp.task('html', function(){
 gulp.task('index', function(){
 	return gulp.src(index)
 		.pipe($.htmlmin())
+		.pipe($.rename('index.html'))
 		.pipe(gulp.dest(build))
-		.pipe(browserSync.stream)
+		.pipe(browserSync.stream())
 });
 
 //compress JPG/PNG/GIF/SVG images
