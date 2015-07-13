@@ -190,11 +190,8 @@
 	}
 
 	#section19 {
-		position: relative;
 
-		figcaption {
-			bottom: 180px !important;
-		}
+		.caption {bottom: 100px !important;}
 		.banner-container {
 			.cta-button {
 				background: $bronze;
@@ -209,44 +206,6 @@
 				}
 			}
 		}
-		// footer {
-		// 	padding: 0 !important;
-		// 	position: absolute;
-		// 	bottom:0 !important;
-		// 	&, * {margin:0;padding: 0;}
-		// 	div {
-		// 		height: 70px;
-		// 		width: 100%;
-		// 	}
-		// 	.cta-button {
-		// 		background: $bronze;
-		// 		position: relative;
-		// 		button {
-		// 			color: $brown;
-		// 			background: #fff;
-		// 			border-radius: 2px;
-		// 			font-family: $nobel;
-		// 			font-size: .9em;
-		// 			font-weight: bold;
-		// 			padding:10px 25px;
-		// 			position: absolute;
-		// 			top:50%;left:50%;
-		// 			transform: translate(-50%, -50%);
-		// 		}
-		// 	}
-		// 	.sales-agent {
-		// 		background: $brown;
-		// 		text-align: center;
-		// 		span {
-		// 			font-family: $nobel-light;
-		// 			font-size: .9em;
-		// 			font-weight: bold;
-		// 			line-height: 70px;
-		// 		}
-		// 	}
-		//
-		// }
-
 	}
 
 	#section20 {

@@ -265,27 +265,6 @@ button, input, textarea {
   border-radius: 2px !important;
 }
 
-.section {
-  padding: 0 !important;
-}
-
-.full-banner {
-  bottom: 0;
-  display: block !important;
-  padding: 30px 40px;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-.full-banner span {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
 .inner-wrap {
   height: 100%;
   width: 100%;
@@ -334,10 +313,6 @@ button, input, textarea {
   .banner-container .banner.sales-agent br {
     display: none;
   }
-}
-
-#sidebar-wrap {
-  display: none;
 }
 
 /* CSS Document */
@@ -1070,11 +1045,8 @@ form#contact .submit {
 #fullpage #section16 .feature-items li sup {
   font-size: .5em;
 }
-#fullpage #section19 {
-  position: relative;
-}
-#fullpage #section19 figcaption {
-  bottom: 180px !important;
+#fullpage #section19 .caption {
+  bottom: 100px !important;
 }
 #fullpage #section19 .banner-container .cta-button {
   background: #B39153;
@@ -1192,6 +1164,7 @@ form#contact .submit {
 }
 
 #sidebar-wrap {
+  display: none;
   position: fixed;
   top: 0;
   left: 25px;
@@ -1231,6 +1204,7 @@ form#contact .submit {
   color: #E6D3BC;
   font-size: .8em;
   letter-spacing: .5px;
+  display: none;
   margin-bottom: 15px;
 }
 #sidebar-wrap .sidenav .sub-items li {
@@ -1245,11 +1219,13 @@ form#contact .submit {
 #sidebar-wrap .sidenav li.active {
   color: #5A5854;
 }
-#sidebar-wrap .sub-items {
-  display: none;
-}
-#sidebar-wrap li.active .sub-items {
+#sidebar-wrap .sidenav li.active .sub-items {
   display: block;
+}
+@media (min-width: 1100px) {
+  #sidebar-wrap {
+    display: block;
+  }
 }
 
 #dynamic-header {
@@ -1262,29 +1238,9 @@ form#contact .submit {
 
 /* section & slides */
 .section, .slide {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   margin: 0;
   padding: 0;
   padding-top: 90px;
-}
-
-/* figure captions */
-.section.slides figcaption {
-  padding: 30px 10px;
-  font-size: 2em;
-}
-.section.slides figcaption p {
-  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.penthouse figcaption, .features figcaption, .neighborhood figcaption {
-  padding: 25px 10px;
-  font-size: 1.1em;
-}
-.penthouse figcaption p, .features figcaption p, .neighborhood figcaption p {
-  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* slider navigation */

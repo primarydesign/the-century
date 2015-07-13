@@ -14,27 +14,8 @@
 
 /* section & slides */
 .section, .slide {
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
 	margin: 0;padding:0;
 	padding-top: 90px; //header
-}
-
-/* figure captions */
-.section.slides {
-	figcaption {
-		padding: 30px 10px;
-		font-size: 2em;
-		p{font-family:$nobel-light;}
-	}
-}
-.penthouse, .features, .neighborhood {
-	figcaption {
-		padding: 25px 10px;
-		font-size: 1.1em;
-		p {font-family:$nobel;}
-	}
 }
 
 /* slider navigation */
