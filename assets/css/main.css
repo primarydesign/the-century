@@ -280,6 +280,10 @@ button, input, textarea {
 @media (min-width: 1100px) {
   .inner-wrap {
     padding-left: 245px;
+    text-align: left;
+  }
+  .inner-wrap .inner-box {
+    margin: 0;
   }
 }
 
