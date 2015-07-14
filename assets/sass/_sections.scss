@@ -246,26 +246,48 @@
 		}
 		footer {
 			background: $brown;
-			display: flex;
-			flex-flow: row nowrap;
-			justify-content: space-between;
-			align-items: center;
-			align-content: center;
-			&, * {padding:0;margin:0;}
-			padding: 0 20px !important;
-			* {margin: 10px 0;}
-			.logo {
-				margin:0;
-				vertical-align: bottom;
+			bottom: 0 !important;
+			margin:0;padding: 20px 15px;
+			text-align: center;
+			div {
+				display: inline-block !important;
+				height:100%;
+				margin:0;padding:0;
 			}
-			.sales {
-				font-size: .5em;
-
+			.logo {
+				height: 20px;
+				line-height:20px;
+				position: absolute;
+				top:50%;left:10px;
+				transform: translateY(-50%);
+				img{height:10px;margin-left:-9px;}
+			}
+			.sales-agent {
+				display: none;
 			}
 			.disclaimer-open {
-				font-size: .7em;
+				height: 20px;
+				line-height:20px;
+				position: absolute;
+				top:50%;right:10px;
+				transform: translateY(-50%);
+				a {
+					color: #fff;
+					font-family: $nobel;
+					font-size: 1.2em;
+					text-decoration: none !important;
+					@media (min-width:1000px){
+						font-size: .9em;
+					}
+				}
 			}
-
+			@media (min-width:530px){
+				padding: 10px 15px;
+				.sales-agent{display:inline;}
+			}
+			@media (min-width:730px){
+				.sales-agent br{display:none;}
+			}
 		}
 	}
 
