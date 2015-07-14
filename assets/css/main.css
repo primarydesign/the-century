@@ -1088,28 +1088,50 @@ form#contact .submit {
 }
 #fullpage #section16 h2, #fullpage #section16 li {
   color: #fff;
+  margin: 0;
+  padding: 0;
+}
+#fullpage #section16 .inner-wrap .inner-box {
+  background: rgba(0, 0, 0, 0.5);
+  padding-bottom: 80px;
+}
+@media (min-width: 1100px) {
+  #fullpage #section16 .inner-wrap {
+    text-align: left !important;
+  }
+  #fullpage #section16 .inner-wrap .inner-box {
+    margin: 0 !important;
+  }
+}
+@media (min-width: 678px), (min-height: 650px) {
+  #fullpage #section16 .inner-wrap {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #fullpage #section16 .inner-wrap .inner-box {
+    background: transparent;
+  }
 }
 #fullpage #section16 h2 {
   font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2em;
-  font-weight: normal;
+  font-weight: bold;
   text-transform: uppercase;
-  margin-top: 40px;
+  padding-bottom: 30px;
 }
 #fullpage #section16 .feature-items {
-  padding-left: 20px;
+  margin-left: 15px;
 }
 #fullpage #section16 .feature-items li {
-  list-style-position: outside;
-  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: bold;
+  font: 400 0.9em "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: .8px;
+  list-style: disc outside;
   line-height: 1.4em;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  padding-left: 5px;
 }
-#fullpage #section16 .feature-items li sup {
-  font-size: .5em;
+#fullpage #section16 .feature-items sup {
+  font-size: .7em;
+  padding-left: 2px;
 }
 #fullpage #section19 .caption {
   bottom: 100px;
