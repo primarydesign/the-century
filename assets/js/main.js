@@ -8,6 +8,13 @@ $(document).ready(function() {
 		scrollOverflow: true,
 		slidesNavigation: true,
 		verticalCentered: false,
+		afterLoad: function(anchorLink, index){
+			if (index === 1) {
+				slideRotation = setInterval($.fn.fullpage.moveSlideRight, 7000);
+			} else {
+				clearInterval(slideRotation);
+			}
+		},
 		onLeave: function(index, nextIndex, direction){
 			updateHeader(nextIndex);
 			updateAccordion(nextIndex);
@@ -59,7 +66,7 @@ $(document).ready(function() {
 			}
 		}
 	}
-	var penthouse = 'Penthouse ' + $('body').attr('class').match(/penthouse(\d*\w?)/)[1].toUpperCase(),
+	var slideRotation, penthouse = 'Penthouse ' + $('body').attr('class').match(/penthouse(\d*\w?)/)[1].toUpperCase(),
 		sections = [
 		{
 			title: penthouse,
