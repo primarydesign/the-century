@@ -33,7 +33,16 @@ $(document).ready(function() {
 		$to = parseInt($to);
 		$.fn.fullpage.moveTo($to);
 	});
-
+	$('.disclaimer-open').click(function(){
+		$('#disclaimer-wrap').addClass('active');
+		$.fn.fullpage.setAllowScrolling(false);
+		$.fn.fullpage.setKeyboardScrolling(false);
+	});
+	$('.disclaimer-close').click(function(){
+		$('#disclaimer-wrap').removeClass('active');
+		$.fn.fullpage.setAllowScrolling(true);
+		$.fn.fullpage.setKeyboardScrolling(true);
+	});
 	function updateCaptionPosition() {
 		$('.banner-container').each(function(){
 			var bottom = $(this).height() + 20;
