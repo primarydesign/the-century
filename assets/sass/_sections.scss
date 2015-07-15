@@ -35,7 +35,7 @@
 	#section15 {background-image: url('../img/section15_on-site-restaurant-hinoki-and-the-bird-from-chef-david-meyers.jpg');}
 	#section16 {background-image: url('../img/section16_outdoor-lounge-and-firepit.jpg');}
 	#section17 {background-image: url('../img/section17_botique-shopping-destination-rodeo-drive.jpg');}
-	#section18 {background-image: url('../img/section18_getty-museum-featuring-art-photography-architecture-and-gardens.jpg');}
+	#section18 {background-image: url('../img/section13_fitness-center-with-yoga-pilates-studio.jpg');}
 	#section19 {background-image: url('../img/section19_nearby-golf-courses-and-country-clubs.jpg');}
 	#section20 {background-image: url('../img/section2+section20_terrace-breathtaking-views-of-la.jpg');}
 
@@ -80,7 +80,7 @@
 					display: inline-block;
 					height: 16px;width:14px;
 					margin-right: 5px;
-					background: url('../img/print-icon.svg') no-repeat;
+					background: url('../img/icon-print.svg') no-repeat;
 					background-size: contain;
 				}
 				a {
@@ -132,10 +132,15 @@
 
 	#section10 { //features-start
 		.inner-wrap {
+			height: auto;
+			min-height: 100%;
 			padding: 0 !important;
+			background: rgba(0,0,0,0.5);
+			background-attachment: fixed;
 			.inner-box {
 				max-width: 700px;
 				padding: 0 !important;
+				//background: rgba(0,0,0,0.5);
 			}
 		}
 		h2 {
@@ -150,7 +155,7 @@
 			}
 		}
 		p {
-			background: rgba(0,0,0,0.5);
+			//background: rgba(0,0,0,0.5);
 			font-size: 1.2em;
 			text-align: left;
 			display: inline-block;
@@ -210,7 +215,7 @@
 		}
 	}
 
-	#section19 {
+	#section19 {//neightborhood-recreation
 
 		.caption {bottom: 100px;}
 		.banner-container {
@@ -235,12 +240,13 @@
 		h2,form {position:static;}
 
 		.contact-wrap {
-			margin: 30px auto 90px;
+			margin: 0px auto 90px;
 			max-width: 700px;
 			h2 {
-				color: $brown;
+				color: $blackish;
 				margin:0;
 				padding: 30px 0 10px 30px;
+				font-size: 1.7em;
 				text-align: left;
 			}
 		}

@@ -29,8 +29,11 @@ form#contact {//namespace
 	.field {
 		padding: 5px 10px;
 		width: 100%;
-		background: rgba(0,0,0,.35) !important;
-      border-radius: 2px;
+		background: rgba(0,0,0,.5) !important;
+		border: none !important;
+		box-shadow: none !important;
+		border-radius: 2px;
+		color: #fff;
       resize: none;}
 	.error {
 		height: 15px;}
