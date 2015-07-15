@@ -33,6 +33,9 @@ $(document).ready(function() {
 		$to = parseInt($to);
 		$.fn.fullpage.moveTo($to);
 	});
+	$('.move-down').click(function(){
+		$.fn.fullpage.moveSectionDown();
+	});
 	$('.disclaimer-open').click(function(){
 		$('#disclaimer-wrap').addClass('active');
 		$.fn.fullpage.setAllowScrolling(false);

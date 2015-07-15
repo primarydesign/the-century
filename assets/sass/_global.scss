@@ -8,7 +8,7 @@ button, input[type="submit"], a {
 h1, h2, h3, h4 {
 	letter-spacing: 2px;
 }
-button {margin:0 !important;}
+button {margin:0 !important;outline:none;}
 button, input, textarea {border-radius: 2px !important;}
 
 .inner-wrap {
@@ -31,7 +31,7 @@ button, input, textarea {border-radius: 2px !important;}
 	padding: 20px 30px;
 	position: absolute;
 	width:100%;
-	background: rgba(0,0,0,0.6);
+	background: rgba(0,0,0,0.65);
 	text-align: center;
 	span, p {
 		color: #fff;

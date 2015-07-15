@@ -259,6 +259,7 @@ h1, h2, h3, h4 {
 
 button {
   margin: 0 !important;
+  outline: none;
 }
 
 button, input, textarea {
@@ -290,7 +291,7 @@ button, input, textarea {
   padding: 20px 30px;
   position: absolute;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.65);
   text-align: center;
 }
 .caption span, .caption p {
@@ -969,8 +970,29 @@ form#contact .submit {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#fullpage #section1 figcaption {
+#fullpage #section1 .caption {
   bottom: 20% !important;
+  text-align: center;
+}
+#fullpage #section1 .caption p {
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+#fullpage #section1 .caption button {
+  background: #fff;
+  color: #5A5854;
+  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .6em;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  margin-top: 15px !important;
+  padding: 7px 12px;
+}
+@media (min-width: 535px) {
+  #fullpage #section1 .caption br {
+    display: none;
+  }
 }
 @media (min-width: 1100px) {
   #fullpage #section8 .inner-wrap {
@@ -1356,6 +1378,10 @@ form#contact .submit {
   #sidebar-wrap {
     display: block;
   }
+}
+
+#section1 .caption {
+  z-index: 5;
 }
 
 #dynamic-header {

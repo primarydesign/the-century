@@ -9,6 +9,7 @@
 @import 'footer';
 
 //CENTRALIZED Z-INDEXING
+#section1 .caption {z-index:5;}
 #dynamic-header {z-index: 10;}
 #sidebar-wrap {z-index: 20;}
 #disclaimer-wrap {z-index: 30;}
