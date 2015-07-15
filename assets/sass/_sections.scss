@@ -302,51 +302,70 @@
 			background: $brown;
 			bottom: 0 !important;
 			margin:0;padding: 20px 15px;
+			min-height:40px;
 			text-align: center;
-			div {
+			div, ul {
 				display: inline-block !important;
 				height:100%;
 				margin:0;padding:0;
 			}
 			.logo {
+				display: none;
 				height: 20px;
 				line-height:20px;
 				position: absolute;
 				top:50%;left:10px;
 				transform: translateY(-50%);
+				width:100px;
 				img{height:10px;margin-left:-9px;}
 			}
 			.sales-agent {
 				display: none;
+				position: absolute;
+				top:50%;left:120px;
+				transform: translateY(-50%);
+				width: calc(100% - 365px);
+				text-transform: center;
 			}
-			.disclaimer-open {
+			.disclosure-links {
 				height: 20px;
 				line-height:20px;
 				position: absolute;
-				top:50%;right:10px;
+				top:50%;right:0px;
+				text-align: center;
 				transform: translateY(-50%);
+				width: 100%;
+
+				li {
+					display: inline-block;
+					margin-right:10px;
+					&:last-child {margin-right:0;}
+				}
 				a {
 					color: #fff;
 					font-family: $nobel;
-					font-size: 1.2em;
+					font-size: 1em;
 					text-decoration: none !important;
-					@media (min-width:1000px){
-						font-size: .9em;
-					}
 				}
 			}
-			@media (min-width:530px){
-				padding: 10px 15px;
-				.sales-agent{display:inline;}
+			@media (min-width:400px){
+				.logo {display:inline-block;}
+				.disclosure-links {
+					right: 10px;
+					text-align: left;
+					width: auto;
+					li {margin:0 10px 0 0;}
+				}
 			}
-			@media (min-width:730px){
+			@media (min-width:700px){
+				padding: 10px 15px;
+				.sales-agent{display:inline-block;}
+			}
+			@media (min-width:1000px){
 				.sales-agent br{display:none;}
+				.disclosure-links a {font-size:.7em;}
 			}
 		}
 	}
 
-}
-
-#disclaimer {
-	display: none;
 }
