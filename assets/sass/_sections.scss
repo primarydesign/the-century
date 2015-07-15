@@ -11,6 +11,20 @@
 	#section7 {background-image: url('../img/37a_section7_en-suite-den-with-views-of-la.jpg');}
 	#section11 {background-image: url('../img/37a_section11+slide2_lobby-with-doorman-and-concierge.jpg');}
 	#section12 {background-image: url('../img/37a_section12+slide3_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg');}
+
+	// #section9 .inner-wrap {
+	// 	background-color: #B99764;
+	// 	position: relative;
+	// 	img {
+	// 		max-height: 100%;
+	// 		max-width: 100%;
+	// 		padding: 30px;
+	// 		position: absolute;
+	// 		top:50%;left:50%;
+	// 		transform: translate(-50%,-50%);
+	// 	}
+	// }
+
 }//namesapce
 .penthouse40 {//namesapce
 	#slide1 {background-image: url('../img/section1+slide1_living-room-with-a-view-of-los-angeles.jpg');}
@@ -24,6 +38,18 @@
 	#section7 {background-image: url('../img/section7_full-bathrooms-his-her-master-baths.jpg');}
 	#section11 {background-image: url('../img/section11+slide2_lobby-with-doorman-and-concierge.jpg');}
 	#section12 {background-image: url('../img/section12_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg');}
+
+	// #section9 .inner-wrap {
+	// 	img {
+	// 		margin-top: 90px;
+	// 		max-width: 1200px;
+	// 		position: absolute;
+	// 		top:40%;left:50%;
+	// 		transform: translate(-50%,-50%);
+	// 		width:100%;
+	// 	}
+	// }
+
 }//namesapce
 #fullpage {//namespace
 
@@ -115,17 +141,17 @@
 		}
 	}
 
-	#section9 {//floorplan image
+	#section9 {//floorplan-image
 		.inner-wrap {
-			padding-left:0;
-			//background: red;
+			background-color: #B99764;
+			position: relative;
 			img {
-				margin-top: 90px;
-				max-width: 1200px;
+				max-height: 100%;
+				max-width: 100%;
+				padding: 30px;
 				position: absolute;
 				top:50%;left:50%;
 				transform: translate(-50%,-50%);
-				width:100%;
 			}
 		}
 	}

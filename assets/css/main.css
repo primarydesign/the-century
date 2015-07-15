@@ -1039,16 +1039,17 @@ form#contact .submit {
   line-height: 1.4em;
 }
 #fullpage #section9 .inner-wrap {
-  padding-left: 0;
+  background-color: #B99764;
+  position: relative;
 }
 #fullpage #section9 .inner-wrap img {
-  margin-top: 90px;
-  max-width: 1200px;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
 }
 #fullpage #section10 .inner-wrap {
   height: auto;
