@@ -1006,7 +1006,7 @@ form#contact .submit {
   height: 16px;
   width: 14px;
   margin-right: 5px;
-  background: url("../img/print-icon.svg") no-repeat;
+  background: url("../img/icon-print.svg") no-repeat;
   background-size: contain;
 }
 #fullpage #section8 .pdf li a {
