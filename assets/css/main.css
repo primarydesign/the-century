@@ -1051,7 +1051,11 @@ form#contact .submit {
   width: 100%;
 }
 #fullpage #section10 .inner-wrap {
+  height: auto;
+  min-height: 100%;
   padding: 0 !important;
+  background: rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
 }
 #fullpage #section10 .inner-wrap .inner-box {
   max-width: 700px;
@@ -1072,7 +1076,6 @@ form#contact .submit {
   }
 }
 #fullpage #section10 p {
-  background: rgba(0, 0, 0, 0.5);
   font-size: 1.2em;
   text-align: left;
   display: inline-block;
