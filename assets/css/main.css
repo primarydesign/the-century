@@ -840,8 +840,11 @@ form#contact .label {
 form#contact .field {
   padding: 5px 10px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.35) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: none !important;
+  box-shadow: none !important;
   border-radius: 2px;
+  color: #fff;
   resize: none;
 }
 form#contact .error {
@@ -1155,13 +1158,14 @@ form#contact .submit {
   position: static;
 }
 #fullpage #section20 .contact-wrap {
-  margin: 30px auto 90px;
+  margin: 0px auto 90px;
   max-width: 700px;
 }
 #fullpage #section20 .contact-wrap h2 {
-  color: #5A5854;
+  color: #433F39;
   margin: 0;
   padding: 30px 0 10px 30px;
+  font-size: 1.7em;
   text-align: left;
 }
 #fullpage #section20 footer {
