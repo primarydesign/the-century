@@ -1365,6 +1365,7 @@ form#contact .submit {
 }
 #sidebar-wrap .sidenav li {
   list-style: none;
+  line-height: 25px !important;
 }
 #sidebar-wrap .sidenav .main-items {
   color: #fff;
@@ -1382,7 +1383,7 @@ form#contact .submit {
   font-size: .8em;
   letter-spacing: .5px;
   display: none;
-  margin-bottom: 15px;
+  margin-left: 10px;
 }
 #sidebar-wrap .sidenav .sub-items li {
   line-height: 1.6em;

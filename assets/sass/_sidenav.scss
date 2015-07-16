@@ -18,7 +18,10 @@
 		padding: 30px 10px;
 		background: $bronze;
 
-		li {list-style: none;}
+		li {
+			list-style: none;
+			line-height: 25px !important;
+		}
 		.main-items {
 			color: #fff;
 			font-size: .8em;
@@ -31,7 +34,7 @@
 			font-size: .8em;
 			letter-spacing: .5px;
 			display: none;
-			margin-bottom: 15px;
+			margin-left: 10px;
 			li {line-height: 1.6em;}
 			a {font-family: $nobel;}
 		}
