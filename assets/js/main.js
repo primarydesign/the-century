@@ -185,4 +185,108 @@ $(document).ready(function() {
 			max: 20
 		}
 	];
+
+	var errors = {
+		empty: "This cannot be left empty",
+		email: "Enter a valid email address",
+		phone: "Enter a valid phone number"
+	}, regex = {
+		email: /[a-zA-Z0-9_.+\-]+@[a-zA-Z0-9]+(\.[a-zA-Z]+)+$/,
+		phone: /^\(?([0-9]{3})\)?[\-. ]?([0-9]{3})[\-. ]?([0-9]{4})$/
+	};
+
+	$('#phone').focusout(function () {
+		if ($(this).val().search(regex.phone) === 0) {
+			$(this).addClass('valid').removeClass('invalid')
+				.siblings('.error').text('');
+		} else {
+			$(this).addClass('invalid').removeClass('valid')
+				.siblings('.error').text(errors.phone);
+		}
+	});
+	$('[required]').focusout(function () {
+		if ($(this).val() !== "") {
+			if ($(this).hasClass('noval')) {
+				$(this).addClass('valid').removeClass('invalid')
+					.siblings('.error').text('');
+			} else {
+				var $id = $(this).attr('id');
+
+				if ($(this).val().search(regex[$id]) === 0) {
+					$(this).addClass('valid').removeClass('invalid')
+						.siblings('.error').text('');
+				} else {
+					$(this).addClass('invalid').removeClass('valid')
+						.siblings('.error').text(errors[$id]);
+				}
+			}
+		} else {
+			$(this).addClass('invalid').removeClass('valid')
+				.siblings('.error').text(errors.empty);
+		}
+	});
+	$('.field:not([required])').focusout(function () {
+		if ($(this).val().length === 0) {
+			$(this).removeClass('invalid')
+				.siblings('.error').text('');
+		}
+	});
+
+	function enableSubmit() {
+		var $reqs = $('[required]'),
+			$vals = $('.field:not(.noval)'),
+			$reqsValid = $('[required].valid'),
+			$valsNotInvalid = $('.field:not(.noval):not(.invalid)'),
+			clearance = 0;
+
+		if ($reqs.length !== $reqsValid.length) { clearance += 1; }
+		if ($vals.length !== $valsNotInvalid.length) { clearance += 1; }
+
+		if (clearance === 0) {
+			$('.submit').removeAttr('disabled');
+			console.log("clearance === 0");
+		} else {
+			$('.submit').attr('disabled', '');
+			console.log("clearance !== 0");
+		}
+	}
+
+	$('.submit').mouseenter(function () {
+		var $reqs = $('[required]'),
+			$vals = $('.field:not(.noval)'),
+			$reqsValid = $('[required].valid'),
+			$valsNotInvalid = $('.field:not(.noval):not(.invalid)'),
+			clearance = 0;
+
+		if ($reqs.length !== $reqsValid.length) { clearance += 1; }
+		if ($vals.length !== $valsNotInvalid.length) { clearance += 1; }
+
+		if (clearance === 0) {
+			$(this).removeAttr('disabled');
+		} else {
+			$(this).attr('disabled', '');
+		}
+	});
+	$('.field').mouseleave(function(){
+		enableSubmit();
+	});
+
+	$('#contact').on('submit', function (e) {
+		e.preventDefault();
+		$.ajax({
+			type: 'POST',
+			url: 'process.php',
+			data: $(this).serialize(),
+			beforeSend: function () {
+				$('.submit').attr('disabled', '').val('SENDING...');
+			},
+			success: function () {
+				$('.submit').val('THANK YOU');
+			},
+			error: function () {
+				$('.submit').removeAttr('disabled');
+			}
+		});
+	});
+
 });
