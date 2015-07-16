@@ -321,11 +321,8 @@
 			}
 			.sales-agent {
 				display: none;
-				position: absolute;
-				top:50%;left:120px;
-				transform: translateY(-50%);
-				width: calc(100% - 365px);
-				text-transform: center;
+				position: relative;
+				//background: red;
 			}
 			.disclosure-links {
 				height: 20px;
@@ -357,13 +354,15 @@
 					li {margin:0 10px 0 0;}
 				}
 			}
-			@media (min-width:700px){
+			@media (min-width:800px){
 				padding: 10px 15px;
 				.sales-agent{display:inline-block;}
 			}
 			@media (min-width:1000px){
-				.sales-agent br{display:none;}
 				.disclosure-links a {font-size:.7em;}
+			}
+			@media (min-width:1140px){
+				.sales-agent br{display:none;}
 			}
 		}
 	}

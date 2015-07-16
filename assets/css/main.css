@@ -1224,12 +1224,7 @@ form#contact .submit {
 }
 #fullpage #section20 footer .sales-agent {
   display: none;
-  position: absolute;
-  top: 50%;
-  left: 120px;
-  transform: translateY(-50%);
-  width: calc(100% - 365px);
-  text-transform: center;
+  position: relative;
 }
 #fullpage #section20 footer .disclosure-links {
   height: 20px;
@@ -1267,7 +1262,7 @@ form#contact .submit {
     margin: 0 10px 0 0;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   #fullpage #section20 footer {
     padding: 10px 15px;
   }
@@ -1276,11 +1271,13 @@ form#contact .submit {
   }
 }
 @media (min-width: 1000px) {
-  #fullpage #section20 footer .sales-agent br {
-    display: none;
-  }
   #fullpage #section20 footer .disclosure-links a {
     font-size: .7em;
+  }
+}
+@media (min-width: 1140px) {
+  #fullpage #section20 footer .sales-agent br {
+    display: none;
   }
 }
 
