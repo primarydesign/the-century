@@ -848,6 +848,9 @@ form#contact .field {
   color: #fff;
   resize: none;
 }
+form#contact .field[id="source"] {
+  -moz-appearance: none;
+}
 form#contact .error {
   height: 15px;
 }
