@@ -2,8 +2,8 @@
 
 if (isset($_POST)) {
 
-	$fname = $_POST['first_name'];
-	$lname = $_POST['last_name'];
+	$fname = $_POST['firstname'];
+	$lname = $_POST['lastname'];
 	$email = $_POST['email'];
 	$phone = $_POST['phone'];
 	$source = $_POST['source'];
@@ -30,17 +30,16 @@ if (isset($_POST)) {
 	/* submission clear */
 
 		//Load CMS Constants
-		$community_number = "215";
+		$community_number = "576";
 		$followup_code = "E";
-		$custom_4 = ""
-
+		
 		//Load Request Data
 		$data = "FirstName:" . $fname;
 		$data .= "~LastName:" . $lname;
 		$data .= "~Email:" . $email;
 		$data .= "~Phone:" . $phone;
 		$data .= "~Source:" . $source;
-		$data .= "~Comments:" . $message . date("l jS \of F Y h:i:s A");
+		$data .= "~Comments:" . $message;
 		$data .= "~CommunityNumber:" . $community_number;
 		$data .= "~FollowupCode:" . $followup_code;
 		//$data .= "~Custom4" . $custom_4;
@@ -48,9 +47,7 @@ if (isset($_POST)) {
 		$url .= $base . (urlencode($data));
 
 		//Initialize Mailer & Request
-		//$response = implode('',file($url));
-		$message .= date("l jS \of F Y h:i:s A");
-		if (mail("mitchell@primarydesign.com", "Test", $message))
+		$response = implode('',file($url));
 
 	}/**(submission)**/
 }
