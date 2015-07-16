@@ -84,6 +84,8 @@ $(document).ready(function() {
 		}
 	}
 	function updateAccordion(index) {
+		$('.main-items > li').removeClass('active');
+		$('.sub-items > li').removeClass('active');
 		for(var m = 0; m < sections.length; m++){
 			if (index >= sections[m].min && index <= sections[m].max){
 				var $mainIndex = sections[m].min;
