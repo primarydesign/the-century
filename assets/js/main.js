@@ -275,7 +275,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		$.ajax({
 			type: 'POST',
-			url: 'process.php',
+			url: 'submit.php',
 			data: $(this).serialize(),
 			beforeSend: function () {
 				$('.submit').attr('disabled', '').val('SENDING...');
