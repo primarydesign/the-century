@@ -87,5 +87,11 @@ gulp.task('image', function(){
 		.pipe(browserSync.stream());
 })
 
+gulp.task('php', function(){
+	return gulp.src('*.php')
+		.pipe(gulp.dest(build))
+		.pipe(browserSync.stream());
+});
+
 //reconstruct build environment
 gulp.task('build', ['style','script','index','image']);

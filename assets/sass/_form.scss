@@ -34,7 +34,9 @@ form#contact {//namespace
 		box-shadow: none !important;
 		border-radius: 2px;
 		color: #fff;
-      resize: none;}
+      resize: none;
+		&[id="source"]{
+			-moz-appearance: none;}}
 	.error {
 		height: 15px;}
 	.submit {
