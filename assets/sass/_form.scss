@@ -36,7 +36,8 @@ form#contact {//namespace
 		color: #fff;
       resize: none;
 		&[id="source"]{
-			-moz-appearance: none;}}
+			-moz-appearance: none;
+			text-transform: none;}}
 	.error {
 		height: 15px;}
 	.submit {

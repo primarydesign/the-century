@@ -850,6 +850,7 @@ form#contact .field {
 }
 form#contact .field[id="source"] {
   -moz-appearance: none;
+  text-transform: none;
 }
 form#contact .error {
   height: 15px;
