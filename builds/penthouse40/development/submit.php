@@ -8,6 +8,7 @@ if (isset($_POST)) {
 	$phone = $_POST['phone'];
 	$source = $_POST['source'];
 	$message = $_POST['message'];
+	$website = $_POST['website'];
 
 	$clearance = 0;
 
@@ -32,7 +33,7 @@ if (isset($_POST)) {
 		//Load CMS Constants
 		$community_number = "576";
 		$followup_code = "E";
-		
+
 		//Load Request Data
 		$data = "FirstName:" . $fname;
 		$data .= "~LastName:" . $lname;
@@ -42,7 +43,7 @@ if (isset($_POST)) {
 		$data .= "~Comments:" . $message;
 		$data .= "~CommunityNumber:" . $community_number;
 		$data .= "~FollowupCode:" . $followup_code;
-		//$data .= "~Custom4" . $custom_4;
+		$data .= "~Website:" . $website;
 		$base = "http://www.buildercms.com/cms/custom/ProspectImport.aspx?ProspectData=";
 		$url .= $base . (urlencode($data));
 
