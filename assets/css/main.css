@@ -897,10 +897,10 @@ form#contact .submit {
 .penthouse37a #section7 {
   background-image: url("../img/37a_section7_en-suite-den-with-views-of-la.jpg");
 }
-.penthouse37a #section11 {
+.penthouse37a #section10 {
   background-image: url("../img/37a_section11+slide2_lobby-with-doorman-and-concierge.jpg");
 }
-.penthouse37a #section12 {
+.penthouse37a #section11 {
   background-image: url("../img/37a_section12+slide3_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg");
 }
 
@@ -931,10 +931,10 @@ form#contact .submit {
 .penthouse40 #section7 {
   background-image: url("../img/section7_full-bathrooms-his-her-master-baths.jpg");
 }
-.penthouse40 #section11 {
+.penthouse40 #section10 {
   background-image: url("../img/section11+slide2_lobby-with-doorman-and-concierge.jpg");
 }
-.penthouse40 #section12 {
+.penthouse40 #section11 {
   background-image: url("../img/section12_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg");
 }
 
@@ -942,31 +942,31 @@ form#contact .submit {
   /* BACKGROUNDS (SKIP SECTIONS 8-9) */
   /* INDIVIDUAL SECTION STYLINGS */
 }
-#fullpage #section10 {
+#fullpage #section9 {
   background-image: url("../img/section10_exterior-with-acres-of-lush-gardens.jpg");
 }
-#fullpage #section13 {
+#fullpage #section12 {
   background-image: url("../img/section13_fitness-center-with-yoga-pilates-studio.jpg");
 }
-#fullpage #section14 {
+#fullpage #section13 {
   background-image: url("../img/section14_plush-multimedia-screening-room-lounge.jpg");
 }
-#fullpage #section15 {
+#fullpage #section14 {
   background-image: url("../img/section15_on-site-restaurant-hinoki-and-the-bird-from-chef-david-meyers.jpg");
 }
-#fullpage #section16 {
+#fullpage #section15 {
   background-image: url("../img/section16_outdoor-lounge-and-firepit.jpg");
 }
-#fullpage #section17 {
+#fullpage #section16 {
   background-image: url("../img/section17_botique-shopping-destination-rodeo-drive.jpg");
 }
-#fullpage #section18 {
+#fullpage #section17 {
   background-image: url("../img/section13_fitness-center-with-yoga-pilates-studio.jpg");
 }
-#fullpage #section19 {
+#fullpage #section17 {
   background-image: url("../img/section19_nearby-golf-courses-and-country-clubs.jpg");
 }
-#fullpage #section20 {
+#fullpage #section18 {
   background-image: url("../img/section2+section20_terrace-breathtaking-views-of-la.jpg");
 }
 #fullpage .section, #fullpage .slide {
@@ -998,77 +998,11 @@ form#contact .submit {
     display: none;
   }
 }
-@media (min-width: 1100px) {
-  #fullpage #section8 .inner-wrap, #fullpage #section9 .inner-wrap {
-    text-align: left !important;
-  }
-  #fullpage #section8 .inner-wrap .inner-box, #fullpage #section9 .inner-wrap .inner-box {
-    margin: 0 !important;
-  }
-}
-#fullpage #section8 h1, #fullpage #section8 h2, #fullpage #section8 h3, #fullpage #section8 li, #fullpage #section9 h1, #fullpage #section9 h2, #fullpage #section9 h3, #fullpage #section9 li {
-  color: #433F39;
-  margin: 0;
-  padding: 0;
-}
-#fullpage #section8 h2, #fullpage #section8 h3, #fullpage #section8 .feature-items li, #fullpage #section9 h2, #fullpage #section9 h3, #fullpage #section9 .feature-items li {
-  margin-bottom: 10px;
-}
-#fullpage #section8 h1, #fullpage #section9 h1 {
-  font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-#fullpage #section8 .pdf, #fullpage #section9 .pdf {
-  margin-top: 20px;
-}
-#fullpage #section8 .pdf li, #fullpage #section9 .pdf li {
-  list-style: none;
-  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: .7em;
-  text-transform: uppercase;
-}
-#fullpage #section8 .pdf li:before, #fullpage #section9 .pdf li:before {
-  content: '';
-  display: inline-block;
-  height: 16px;
-  width: 14px;
-  margin-right: 5px;
-  background: url("../img/icon-print.svg") no-repeat;
-  background-size: contain;
-}
-#fullpage #section8 .pdf li a, #fullpage #section9 .pdf li a {
-  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-  color: #5A5854;
-}
-#fullpage #section8 h2, #fullpage #section9 h2 {
-  font-size: 1.2em;
-  font-weight: normal;
-  letter-spacing: 3px;
-  margin: 40px 0 5px;
-}
-#fullpage #section8 h3, #fullpage #section9 h3 {
-  font-size: .8em;
-  letter-spacing: 1px;
-  text-transform: none;
-}
-#fullpage #section8 .feature-items li, #fullpage #section9 .feature-items li {
-  list-style: none;
-  font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: .8em;
-  letter-spacing: .8px;
-  line-height: 1.4em;
-}
-#fullpage #section9 .inner-wrap {
+#fullpage #section8 .inner-wrap {
   background-color: #B99764;
   position: relative;
 }
-#fullpage #section9 .inner-wrap img {
+#fullpage #section8 .inner-wrap img {
   max-height: 100%;
   max-width: 100%;
   padding: 30px;
@@ -1078,18 +1012,18 @@ form#contact .submit {
   transform: translate(-50%, -50%);
 }
 @media (orientation: landscape) {
-  #fullpage #section9 .inner-wrap img {
+  #fullpage #section8 .inner-wrap img {
     padding-top: 85px;
   }
 }
-#fullpage #section9 .inner-wrap .inner-box {
+#fullpage #section8 .inner-wrap .inner-box {
   max-width: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-#fullpage #section9 .inner-wrap .inner-box h2 {
+#fullpage #section8 .inner-wrap .inner-box h2 {
   color: #433F39;
   font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
@@ -1100,23 +1034,23 @@ form#contact .submit {
   padding: 0;
 }
 @media (min-width: 400px) {
-  #fullpage #section9 .inner-wrap .inner-box h2 {
+  #fullpage #section8 .inner-wrap .inner-box h2 {
     font-size: 1.5em;
   }
 }
 @media (min-width: 465px) {
-  #fullpage #section9 .inner-wrap .inner-box h2 {
+  #fullpage #section8 .inner-wrap .inner-box h2 {
     font-size: 2em;
   }
 }
-#fullpage #section9 .inner-wrap .inner-box .printable li {
+#fullpage #section8 .inner-wrap .inner-box .printable li {
   list-style: none;
   font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .7em;
   text-align: center;
   text-transform: uppercase;
 }
-#fullpage #section9 .inner-wrap .inner-box .printable li:before {
+#fullpage #section8 .inner-wrap .inner-box .printable li:before {
   content: '';
   display: inline-block;
   height: 16px;
@@ -1126,7 +1060,7 @@ form#contact .submit {
   background: url("../img/icon-print.svg") no-repeat;
   background-size: contain;
 }
-#fullpage #section9 .inner-wrap .inner-box .printable li a {
+#fullpage #section8 .inner-wrap .inner-box .printable li a {
   font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   text-transform: uppercase;
@@ -1135,31 +1069,31 @@ form#contact .submit {
   color: #fff;
 }
 @media (min-width: 1100px) {
-  #fullpage #section9 .inner-wrap .inner-box {
+  #fullpage #section8 .inner-wrap .inner-box {
     padding-left: 245px;
   }
-  #fullpage #section9 .inner-wrap .inner-box h2, #fullpage #section9 .inner-wrap .inner-box .printable li, #fullpage #section9 .inner-wrap .inner-box .printable li a {
+  #fullpage #section8 .inner-wrap .inner-box h2, #fullpage #section8 .inner-wrap .inner-box .printable li, #fullpage #section8 .inner-wrap .inner-box .printable li a {
     text-align: left;
   }
 }
 @media (max-width: 450px) {
-  #fullpage #section9 .inner-wrap img, #fullpage #section9 .inner-wrap .inner-box {
+  #fullpage #section8 .inner-wrap img, #fullpage #section8 .inner-wrap .inner-box {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-#fullpage #section10 .inner-wrap {
+#fullpage #section9 .inner-wrap {
   height: auto;
   min-height: 100%;
   padding: 0 !important;
   background: rgba(0, 0, 0, 0.5);
   background-attachment: fixed;
 }
-#fullpage #section10 .inner-wrap .inner-box {
+#fullpage #section9 .inner-wrap .inner-box {
   max-width: 700px;
   padding: 0 !important;
 }
-#fullpage #section10 h2 {
+#fullpage #section9 h2 {
   font-size: 2em;
   font-weight: normal;
   letter-spacing: 3.5px;
@@ -1168,12 +1102,12 @@ form#contact .submit {
   padding: 20px 20px 50px;
 }
 @media (min-width: 500px) {
-  #fullpage #section10 h2 {
+  #fullpage #section9 h2 {
     font-size: 2.3em;
     padding: 20px 0 50px;
   }
 }
-#fullpage #section10 p {
+#fullpage #section9 p {
   font-size: 1.2em;
   text-align: left;
   display: inline-block;
@@ -1181,56 +1115,56 @@ form#contact .submit {
   padding: 20px 20px 40px;
 }
 @media (min-width: 500px) {
-  #fullpage #section10 p {
+  #fullpage #section9 p {
     padding: 30px 40px;
   }
 }
-#fullpage #section15 .caption .logo {
+#fullpage #section14 .caption .logo {
   display: block;
   height: 100px;
   margin: 0 auto 20px;
 }
 @media (max-width: 900px) {
-  #fullpage #section15 .caption br {
+  #fullpage #section14 .caption br {
     display: none;
   }
 }
-#fullpage #section16 h2, #fullpage #section16 li {
+#fullpage #section15 h2, #fullpage #section15 li {
   color: #fff;
   margin: 0;
   padding: 0;
 }
-#fullpage #section16 .inner-wrap .inner-box {
+#fullpage #section15 .inner-wrap .inner-box {
   background: rgba(0, 0, 0, 0.5);
   padding-bottom: 80px;
 }
 @media (min-width: 1100px) {
-  #fullpage #section16 .inner-wrap {
+  #fullpage #section15 .inner-wrap {
     text-align: left !important;
   }
-  #fullpage #section16 .inner-wrap .inner-box {
+  #fullpage #section15 .inner-wrap .inner-box {
     margin: 0 !important;
   }
 }
 @media (min-width: 678px), (min-height: 650px) {
-  #fullpage #section16 .inner-wrap {
+  #fullpage #section15 .inner-wrap {
     background: rgba(0, 0, 0, 0.5);
   }
-  #fullpage #section16 .inner-wrap .inner-box {
+  #fullpage #section15 .inner-wrap .inner-box {
     background: transparent;
   }
 }
-#fullpage #section16 h2 {
+#fullpage #section15 h2 {
   font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 30px;
 }
-#fullpage #section16 .feature-items {
+#fullpage #section15 .feature-items {
   margin-left: 15px;
 }
-#fullpage #section16 .feature-items li {
+#fullpage #section15 .feature-items li {
   font: 400 0.9em "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: .8px;
   list-style: disc outside;
@@ -1238,18 +1172,18 @@ form#contact .submit {
   margin-bottom: 10px;
   padding-left: 5px;
 }
-#fullpage #section16 .feature-items sup {
+#fullpage #section15 .feature-items sup {
   font-size: .7em;
   padding-left: 2px;
 }
-#fullpage #section19 .caption {
+#fullpage #section17 .caption {
   bottom: 100px;
 }
-#fullpage #section19 .banner-container .cta-button {
+#fullpage #section17 .banner-container .cta-button {
   background: #B39153;
   text-align: center;
 }
-#fullpage #section19 .banner-container .cta-button button {
+#fullpage #section17 .banner-container .cta-button button {
   background: #fff;
   color: #5A5854;
   font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1257,24 +1191,24 @@ form#contact .submit {
   font-weight: bold;
   padding: 10px 25px;
 }
-#fullpage #section20 {
+#fullpage #section18 {
   padding-top: 90px !important;
 }
-#fullpage #section20 h2, #fullpage #section20 form {
+#fullpage #section18 h2, #fullpage #section18 form {
   position: static;
 }
-#fullpage #section20 .contact-wrap {
+#fullpage #section18 .contact-wrap {
   margin: 0px auto 90px;
   max-width: 700px;
 }
-#fullpage #section20 .contact-wrap h2 {
+#fullpage #section18 .contact-wrap h2 {
   color: #fff;
   margin: 0;
   padding: 30px 0 10px 30px;
   font-size: 1.7em;
   text-align: left;
 }
-#fullpage #section20 footer {
+#fullpage #section18 footer {
   background: #5A5854;
   bottom: 0 !important;
   margin: 0;
@@ -1282,13 +1216,13 @@ form#contact .submit {
   min-height: 40px;
   text-align: center;
 }
-#fullpage #section20 footer div, #fullpage #section20 footer ul {
+#fullpage #section18 footer div, #fullpage #section18 footer ul {
   display: inline-block !important;
   height: 100%;
   margin: 0;
   padding: 0;
 }
-#fullpage #section20 footer .logo {
+#fullpage #section18 footer .logo {
   display: none;
   height: 20px;
   line-height: 20px;
@@ -1298,15 +1232,15 @@ form#contact .submit {
   transform: translateY(-50%);
   width: 100px;
 }
-#fullpage #section20 footer .logo img {
+#fullpage #section18 footer .logo img {
   height: 10px;
   margin-left: -9px;
 }
-#fullpage #section20 footer .sales-agent {
+#fullpage #section18 footer .sales-agent {
   display: none;
   position: relative;
 }
-#fullpage #section20 footer .disclosure-links {
+#fullpage #section18 footer .disclosure-links {
   height: 20px;
   line-height: 20px;
   position: absolute;
@@ -1316,47 +1250,47 @@ form#contact .submit {
   transform: translateY(-50%);
   width: 100%;
 }
-#fullpage #section20 footer .disclosure-links li {
+#fullpage #section18 footer .disclosure-links li {
   display: inline-block;
   margin-right: 10px;
 }
-#fullpage #section20 footer .disclosure-links li:last-child {
+#fullpage #section18 footer .disclosure-links li:last-child {
   margin-right: 0;
 }
-#fullpage #section20 footer .disclosure-links a {
+#fullpage #section18 footer .disclosure-links a {
   color: #fff;
   font-family: "dtl_nobelt_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   text-decoration: none !important;
 }
 @media (min-width: 400px) {
-  #fullpage #section20 footer .logo {
+  #fullpage #section18 footer .logo {
     display: inline-block;
   }
-  #fullpage #section20 footer .disclosure-links {
+  #fullpage #section18 footer .disclosure-links {
     right: 10px;
     text-align: left;
     width: auto;
   }
-  #fullpage #section20 footer .disclosure-links li {
+  #fullpage #section18 footer .disclosure-links li {
     margin: 0 10px 0 0;
   }
 }
 @media (min-width: 800px) {
-  #fullpage #section20 footer {
+  #fullpage #section18 footer {
     padding: 10px 15px;
   }
-  #fullpage #section20 footer .sales-agent {
+  #fullpage #section18 footer .sales-agent {
     display: inline-block;
   }
 }
 @media (min-width: 1000px) {
-  #fullpage #section20 footer .disclosure-links a {
+  #fullpage #section18 footer .disclosure-links a {
     font-size: .7em;
   }
 }
 @media (min-width: 1140px) {
-  #fullpage #section20 footer .sales-agent br {
+  #fullpage #section18 footer .sales-agent br {
     display: none;
   }
 }
