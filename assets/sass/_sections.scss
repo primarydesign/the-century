@@ -216,11 +216,14 @@
 	}
 
 	#section15 { //features-restaurant
-		figcaption {
+		.caption {
 			.logo {
 				display: block;
 				height: 100px;
 				margin: 0 auto 20px;
+			}
+			@media (max-width:900px){
+				br {display: none;}
 			}
 		}
 	}

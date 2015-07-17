@@ -1113,10 +1113,15 @@ form#contact .submit {
     padding: 30px 40px;
   }
 }
-#fullpage #section15 figcaption .logo {
+#fullpage #section15 .caption .logo {
   display: block;
   height: 100px;
   margin: 0 auto 20px;
+}
+@media (max-width: 900px) {
+  #fullpage #section15 .caption br {
+    display: none;
+  }
 }
 #fullpage #section16 h2, #fullpage #section16 li {
   color: #fff;
