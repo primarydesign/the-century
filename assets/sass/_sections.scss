@@ -5,27 +5,16 @@
 	#slide3 {background-image: url('../img/37a_section12+slide3_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg');}
 	#section2 {background-image: url('../img/37a_section2_great-room-with-panoramic-views.jpg');}
 	#section3 {background-image: url('../img/37a_section3_chefs-eat-in-kitchen-with-high-end-appliances.jpg');}
-	#section4 {background-image: url('../img/section4_chefs-kitchen-with-terrace-and-exceptional-appliances.jpg');}
+	#section4 {background-image: url('../img/37a_section4_formal-dining-room-with-views-of-los-angeles.jpg');}
 	#section5 {background-image: url('../img/37a_section5_master-bedroom-featuring-library-fireplace-terrace-and-midnight-kitchen.jpg');}
 	#section6 {background-image: url('../img/37a_section6_spa-bath-separate-shower-his-and-her-dressing-areas.jpg');}
 	#section7 {background-image: url('../img/37a_section7_en-suite-den-with-views-of-la.jpg');}
-	#section11 {background-image: url('../img/37a_section11+slide2_lobby-with-doorman-and-concierge.jpg');}
-	#section12 {background-image: url('../img/37a_section12+slide3_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg');}
+	#section10 {background-image: url('../img/37a_section11+slide2_lobby-with-doorman-and-concierge.jpg');}
+	#section11 {background-image: url('../img/37a_section12+slide3_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg');}
 
-	// #section9 .inner-wrap {
-	// 	background-color: #B99764;
-	// 	position: relative;
-	// 	img {
-	// 		max-height: 100%;
-	// 		max-width: 100%;
-	// 		padding: 30px;
-	// 		position: absolute;
-	// 		top:50%;left:50%;
-	// 		transform: translate(-50%,-50%);
-	// 	}
-	// }
 
 }//namesapce
+
 .penthouse40 {//namesapce
 	#slide1 {background-image: url('../img/section1+slide1_living-room-with-a-view-of-los-angeles.jpg');}
 	#slide2 {background-image: url('../img/section11+slide2_lobby-with-doorman-and-concierge.jpg');}
@@ -36,34 +25,25 @@
 	#section5 {background-image: url('../img/section5_stunning-formal-dining-room.jpg');}
 	#section6 {background-image: url('../img/section6+slide3_master-bedroom-overlooking-downtown-los-angeles.jpg');}
 	#section7 {background-image: url('../img/section7_full-bathrooms-his-her-master-baths.jpg');}
-	#section11 {background-image: url('../img/section11+slide2_lobby-with-doorman-and-concierge.jpg');}
-	#section12 {background-image: url('../img/section12_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg');}
+	#section10 {background-image: url('../img/section11+slide2_lobby-with-doorman-and-concierge.jpg');}
+	#section11 {background-image: url('../img/section12_swimming-pool-with-whirlpool-lounges-and-private-furnished-cabanas.jpg');}
 
-	// #section9 .inner-wrap {
-	// 	img {
-	// 		margin-top: 90px;
-	// 		max-width: 1200px;
-	// 		position: absolute;
-	// 		top:40%;left:50%;
-	// 		transform: translate(-50%,-50%);
-	// 		width:100%;
-	// 	}
-	// }
 
 }//namesapce
+
 #fullpage {//namespace
 
 /* BACKGROUNDS (SKIP SECTIONS 8-9) */
 
-	#section10 {background-image: url('../img/section10_exterior-with-acres-of-lush-gardens.jpg');}
-	#section13 {background-image: url('../img/section13_fitness-center-with-yoga-pilates-studio.jpg');}
-	#section14 {background-image: url('../img/section14_plush-multimedia-screening-room-lounge.jpg');}
-	#section15 {background-image: url('../img/section15_on-site-restaurant-hinoki-and-the-bird-from-chef-david-meyers.jpg');}
-	#section16 {background-image: url('../img/section16_outdoor-lounge-and-firepit.jpg');}
-	#section17 {background-image: url('../img/section17_botique-shopping-destination-rodeo-drive.jpg');}
-	#section18 {background-image: url('../img/section13_fitness-center-with-yoga-pilates-studio.jpg');}
-	#section19 {background-image: url('../img/section19_nearby-golf-courses-and-country-clubs.jpg');}
-	#section20 {background-image: url('../img/section2+section20_terrace-breathtaking-views-of-la.jpg');}
+	#section9 {background-image: url('../img/section10_exterior-with-acres-of-lush-gardens.jpg');}
+	#section12 {background-image: url('../img/section13_fitness-center-with-yoga-pilates-studio.jpg');}
+	#section13 {background-image: url('../img/section14_plush-multimedia-screening-room-lounge.jpg');}
+	#section14 {background-image: url('../img/section15_on-site-restaurant-hinoki-and-the-bird-from-chef-david-meyers.jpg');}
+	#section15 {background-image: url('../img/section16_outdoor-lounge-and-firepit.jpg');}
+	#section16 {background-image: url('../img/section17_botique-shopping-destination-rodeo-drive.jpg');}
+	#section17 {background-image: url('../img/section13_fitness-center-with-yoga-pilates-studio.jpg');}
+	#section17 {background-image: url('../img/section19_nearby-golf-courses-and-country-clubs.jpg');}
+	#section18 {background-image: url('../img/section2+section20_terrace-breathtaking-views-of-la.jpg');}
 
 	.section, .slide {
 		background-position: center center;
@@ -101,69 +81,7 @@
 		}
 	}
 
-	#section8 { //floorplan-information
-		.inner-wrap {
-			@media (min-width: 1100px) {
-				text-align: left !important;
-				.inner-box{margin:0 !important;}
-			}
-		}
-		h1, h2, h3, li {color: $blackish;margin: 0;padding: 0;}
-		h2, h3, .feature-items li {margin-bottom: 10px;}
-		h1 {
-			font-family: $nobel;
-			font-size: 2em;
-			font-weight: normal;
-			text-transform: uppercase;
-		}
-		.pdf {
-			margin-top: 20px;
-			li {
-				list-style: none;
-				font-family: $nobel-light;
-				font-size: .7em;
-				text-transform: uppercase;
-				&:before {
-					content: '';
-					display: inline-block;
-					height: 16px;width:14px;
-					margin-right: 5px;
-					background: url('../img/icon-print.svg') no-repeat;
-					background-size: contain;
-				}
-				a {
-					font-family: $nobel-light;
-					font-size: 1em;
-					text-transform: uppercase;
-					font-weight: bold;
-					text-decoration: none;
-					color: $brown;
-				}
-			}
-		}
-		h2 {
-			font-size: 1.2em;
-			font-weight: normal;
-			letter-spacing: 3px;
-			margin: 40px 0 5px;
-		}
-		h3 {
-			font-size: .8em;
-			letter-spacing: 1px;
-			text-transform: none;
-		}
-		.feature-items {
-			li {
-				list-style: none;
-				font-family: $nobel-light;
-				font-size: .8em;
-				letter-spacing: .8px;
-				line-height: 1.4em;
-			}
-		}
-	}
-
-	#section9 {//floorplan-image
+	#section8 {//floorplan-image
 		.inner-wrap {
 			background-color: #B99764;
 			position: relative;
@@ -174,11 +92,73 @@
 				position: absolute;
 				top:50%;left:50%;
 				transform: translate(-50%,-50%);
+				@media (orientation:landscape){
+					padding-top: 85px;
+				}
+			}
+
+			.inner-box {
+				max-width: 100%;width: 100%;
+				position: absolute;
+				top:0;left:0;
+				h2 {
+					color: $blackish;
+					font-family: $nobel;
+					font-size: 1.2em;
+					font-weight: normal;
+					text-align: center;
+					text-transform: uppercase;
+					margin: 0;padding: 0;
+					@media (min-width:400px){
+						font-size: 1.5em;
+					}
+					@media (min-width:465px) {
+						font-size: 2em;
+					}
+				}
+				.printable {
+					li {
+						list-style: none;
+						font-family: $nobel-light;
+						font-size: .7em;
+						text-align: center;
+						text-transform: uppercase;
+						&:before {
+							content: '';
+							display: inline-block;
+							height: 16px;width:14px;
+							margin-right: 5px;
+							vertical-align: text-top;
+							background: url('../img/icon-print.svg') no-repeat;
+							background-size: contain;
+						}
+						a {
+							font-family: $nobel-light;
+							font-size: 1em;
+							text-transform: uppercase;
+							font-weight: bold;
+							text-decoration: none;
+							color: #fff;
+						}
+					}
+				}
+				@media (min-width: 1100px) {
+					padding-left: 245px;
+					h2, .printable li, .printable li a {
+						text-align: left;
+					}
+				}
+			}
+			@media (max-width:450px) {
+				img, .inner-box {
+					padding-left:10px;
+					padding-right:10px;
+				}
 			}
 		}
 	}
 
-	#section10 { //features-start
+	#section9 { //features-start
 		.inner-wrap {
 			height: auto;
 			min-height: 100%;
@@ -215,17 +195,20 @@
 		}
 	}
 
-	#section15 { //features-restaurant
-		figcaption {
+	#section14 { //features-restaurant
+		.caption {
 			.logo {
 				display: block;
 				height: 100px;
 				margin: 0 auto 20px;
 			}
+			@media (max-width:900px){
+				br {display: none;}
+			}
 		}
 	}
 
-	#section16 {//features-additional
+	#section15 {//features-additional
 		h2, li {color: #fff;margin: 0;padding: 0;}
 		.inner-wrap {
 			.inner-box {background: rgba(0,0,0,.5);padding-bottom:80px;}
@@ -263,7 +246,7 @@
 		}
 	}
 
-	#section19 {//neightborhood-recreation
+	#section17 {//neightborhood-recreation
 
 		.caption {bottom: 100px;}
 		.banner-container {
@@ -282,7 +265,7 @@
 		}
 	}
 
-	#section20 {
+	#section18 {
 		padding-top: 90px !important;
 		//padding-bottom: 90px !important;
 		h2,form {position:static;}
@@ -291,7 +274,7 @@
 			margin: 0px auto 90px;
 			max-width: 700px;
 			h2 {
-				color: $blackish;
+				color: #fff;
 				margin:0;
 				padding: 30px 0 10px 30px;
 				font-size: 1.7em;
