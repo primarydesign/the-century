@@ -138,13 +138,16 @@ $(document).ready(function() {
 		{
 			title: 'Floor Plan',
 			min: 8,
-			max: 9
+			max: 8
 		},
 		{
 			title: 'Property Features',
-			min: 10,
-			max: 16,
+			min: 9,
+			max: 15,
 			subs: [
+				{
+					index: 10
+				},
 				{
 					index: 11
 				},
@@ -159,32 +162,26 @@ $(document).ready(function() {
 				},
 				{
 					index: 15
-				},
-				{
-					index: 16
 				}
 			]
 		},
 		{
 			title: 'Neighborhood',
-			min: 17,
-			max: 19,
+			min: 16,
+			max: 17,
 			subs: [
 				{
+					index: 16
+				},
+				{
 					index: 17
-				},
-				{
-					index: 18
-				},
-				{
-					index: 19
 				}
 			]
 		},
 		{
 			title: 'Contact',
-			min: 20,
-			max: 20
+			min: 18,
+			max: 18
 		}
 	];
 
