@@ -1363,7 +1363,7 @@ form#contact .submit {
 }
 #sidebar-wrap .sidenav {
   box-sizing: border-box;
-  padding: 30px 10px;
+  padding: 5px 10px;
   background: #B39153;
 }
 #sidebar-wrap .sidenav li {
@@ -1375,8 +1375,15 @@ form#contact .submit {
   font-size: .8em;
   letter-spacing: 2px;
 }
+#sidebar-wrap .sidenav .main-items > li:first-of-type {
+  margin-top: 12px;
+}
+#sidebar-wrap .sidenav .main-items > li {
+  margin-bottom: 10px;
+}
 #sidebar-wrap .sidenav .main-items li {
   line-height: 1.8em;
+  vertical-align: middle;
 }
 #sidebar-wrap .sidenav .main-items a {
   font-family: "dtl_nobelt_light", "Helvetica Neue", Helvetica, Arial, sans-serif;

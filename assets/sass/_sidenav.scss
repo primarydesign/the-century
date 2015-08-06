@@ -15,7 +15,7 @@
 
 	.sidenav {
 		box-sizing: border-box;
-		padding: 30px 10px;
+		padding: 5px 10px;
 		background: $bronze;
 
 		li {
@@ -26,7 +26,9 @@
 			color: #fff;
 			font-size: .8em;
 			letter-spacing: 2px;
-			li {line-height: 1.8em;}
+			& > li:first-of-type{margin-top:12px;}
+			& > li{margin-bottom: 10px;}
+			li {line-height: 1.8em;vertical-align:middle;}
 			a {font-family: $nobel-light;}
 		}
 		.sub-items {
